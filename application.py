@@ -35,66 +35,87 @@ admin.add_view(PurchasesDataView(PurchasesData, db.session, name="Purchases (XML
 purchase_processor = PurchaseProcessor()
 
 
-def extract_purchases_from_soap(body: bytes) -> tuple[str | None, str | None, str | None]:
-    """Extract base64 purchases, version, and method name from SOAP body."""
+# Тип: (purchases_b64, version, method_name, namespace_uri, soap_12)
+def extract_purchases_from_soap(body: bytes) -> tuple[str | None, str | None, str | None, str | None, bool]:
+    """Extract base64 purchases, version, method name and namespace from SOAP body."""
     try:
         text = body.decode("utf-8", errors="replace")
-        # Определяем вызываемый метод
-        method_match = re.search(
-            r"<[^:]*:?process(Purchases|CancelledPurchases)(?:WithTI)?[^>]*>",
+        # SOAP 1.2 или 1.1
+        soap_12 = "http://www.w3.org/2003/05/soap-envelope" in text or "soap/envelope/12" in text
+
+        # Ищем открывающий тег метода и его namespace
+        method_tag = re.search(
+            r"<([^:>]*:)?(processPurchases|processPurchasesWithTI|processCancelledPurchases|processCancelledPurchasesWithTI)([^>]*)>",
             text,
             re.IGNORECASE
         )
         method_name = None
-        if method_match:
-            full_match = re.search(
-                r"<[^:]*:?(processPurchases|processPurchasesWithTI|processCancelledPurchases|processCancelledPurchasesWithTI)[^>]*>",
-                text,
-                re.IGNORECASE
-            )
-            if full_match:
-                method_name = full_match.group(1).lower()
-        
+        namespace_uri = "http://purchases.erpi.crystals.ru"  # по умолчанию из документации
+        if method_tag:
+            method_name = method_tag.group(2).lower() if method_tag.group(2) else None
+            attrs = method_tag.group(3) or ""
+            # xmlns:ns2="..." или xmlns="..."
+            ns_prefixed = re.search(r'xmlns:([^=]+)=["\']([^"\']+)["\']', attrs)
+            ns_default = re.search(r'\bxmlns=["\']([^"\']+)["\']', attrs)
+            if ns_prefixed:
+                namespace_uri = ns_prefixed.group(2)
+            elif ns_default:
+                namespace_uri = ns_default.group(1)
+
         # Ищем <purchases>BASE64</purchases>
         match = re.search(r"<[^:]*:?purchases[^>]*>([^<]+)</[^:]*:?purchases>", text, re.IGNORECASE | re.DOTALL)
         purchases_b64 = match.group(1).strip() if match else None
-        # Version
         version_match = re.search(r"<[^:]*:?version[^>]*>([^<]+)</[^:]*:?version>", text, re.IGNORECASE)
         version = version_match.group(1).strip() if version_match else None
-        return purchases_b64, version, method_name
+        return purchases_b64, version, method_name, namespace_uri, soap_12
     except Exception as e:
         logger.exception("Failed to extract purchases from SOAP: %s", e)
-        return None, None, None
+        return None, None, None, "http://purchases.erpi.crystals.ru", False
 
 
-def build_soap_response(method_name: str | None = None) -> str:
+def build_soap_response(
+    method_name: str | None = None,
+    namespace_uri: str = "http://purchases.erpi.crystals.ru",
+    soap_12: bool = False,
+) -> str:
     """
-    Build SOAP response according to official documentation.
-    Returns boolean True in case of successful package processing.
+    Строим ответ в том же формате, что ожидает клиент (с обратной связью).
+    return: boolean True при успешной обработке (документация).
     """
-    # Определяем имя метода ответа на основе входящего метода
-    if method_name:
-        if method_name == "processpurchases":
-            response_method = "processPurchasesResponse"
-        elif method_name == "processpurchaseswithti":
-            response_method = "processPurchasesWithTIResponse"
-        elif method_name == "processcancelledpurchases":
-            response_method = "processCancelledPurchasesResponse"
-        elif method_name == "processcancelledpurchaseswithti":
-            response_method = "processCancelledPurchasesWithTIResponse"
-        else:
-            response_method = "processPurchasesResponse"
+    if method_name == "processpurchases":
+        response_method = "processPurchasesResponse"
+    elif method_name == "processpurchaseswithti":
+        response_method = "processPurchasesWithTIResponse"
+    elif method_name == "processcancelledpurchases":
+        response_method = "processCancelledPurchasesResponse"
+    elif method_name == "processcancelledpurchaseswithti":
+        response_method = "processCancelledPurchasesWithTIResponse"
     else:
         response_method = "processPurchasesResponse"
-    
-    # Формат ответа согласно официальной документации
-    # Возвращаемый параметр: boolean, True при успешной обработке
-    return f"""<?xml version="1.0" encoding="UTF-8"?>
-<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+
+    # Используем префикс ns2 и namespace из запроса, чтобы клиент принял ответ.
+    # Часть клиентов ожидает элемент return в том же namespace (ns2:return).
+    ns_prefix = "ns2"
+    body_content = (
+        f'<{ns_prefix}:{response_method} xmlns:{ns_prefix}="{namespace_uri}">'
+        f"<{ns_prefix}:return>true</{ns_prefix}:return>"
+        f"</{ns_prefix}:{response_method}>"
+    )
+
+    if soap_12:
+        envelope_ns = "http://www.w3.org/2003/05/soap-envelope"
+        return f"""<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope xmlns:soap="{envelope_ns}">
   <soap:Body>
-    <ns2:{response_method} xmlns:ns2="http://purchases.erpi.crystals.ru">
-      <return>true</return>
-    </ns2:{response_method}>
+    {body_content}
+  </soap:Body>
+</soap:Envelope>"""
+    # SOAP 1.1
+    envelope_ns = "http://schemas.xmlsoap.org/soap/envelope/"
+    return f"""<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope xmlns:soap="{envelope_ns}">
+  <soap:Body>
+    {body_content}
   </soap:Body>
 </soap:Envelope>"""
 
@@ -110,13 +131,19 @@ def soap_endpoint():
     Returns boolean True according to official documentation.
     """
     body = request.get_data()
-    purchases_b64, version, method_name = extract_purchases_from_soap(body)
+    purchases_b64, version, method_name, namespace_uri, soap_12 = extract_purchases_from_soap(body)
 
-    # Логируем входящий запрос для отладки
-    logger.info(f"Received SOAP request, method: {method_name or 'unknown'}, has purchases: {bool(purchases_b64)}")
+    # Логируем входящий запрос (формат ответа подстраиваем под запрос для режима «с обратной связью»)
+    logger.info(
+        "Received SOAP request, method: %s, has purchases: %s, namespace: %s, SOAP 1.2: %s",
+        method_name or "unknown",
+        bool(purchases_b64),
+        namespace_uri,
+        soap_12,
+    )
 
-    # Строим ответ на основе вызываемого метода
-    soap_response = build_soap_response(method_name)
+    # Ответ в том же формате, что и запрос (namespace + SOAP 1.1/1.2), чтобы клиент принял его
+    soap_response = build_soap_response(method_name, namespace_uri=namespace_uri, soap_12=soap_12)
 
     if not purchases_b64:
         logger.warning("No purchases data in request, returning OK anyway")
