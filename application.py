@@ -34,61 +34,107 @@ admin.add_view(PurchasesDataView(PurchasesData, db.session, name="Purchases (XML
 purchase_processor = PurchaseProcessor()
 
 
-def extract_purchases_from_soap(body: bytes) -> tuple[str | None, str | None]:
-    """Extract base64 purchases and version from SOAP body."""
+def extract_purchases_from_soap(body: bytes) -> tuple[str | None, str | None, str | None]:
+    """Extract base64 purchases, version, and method name from SOAP body."""
     try:
         text = body.decode("utf-8", errors="replace")
+        # Определяем вызываемый метод
+        method_match = re.search(
+            r"<[^:]*:?process(Purchases|CancelledPurchases)(?:WithTI)?[^>]*>",
+            text,
+            re.IGNORECASE
+        )
+        method_name = None
+        if method_match:
+            full_match = re.search(
+                r"<[^:]*:?(processPurchases|processPurchasesWithTI|processCancelledPurchases|processCancelledPurchasesWithTI)[^>]*>",
+                text,
+                re.IGNORECASE
+            )
+            if full_match:
+                method_name = full_match.group(1).lower()
+        
         # Ищем <purchases>BASE64</purchases>
         match = re.search(r"<[^:]*:?purchases[^>]*>([^<]+)</[^:]*:?purchases>", text, re.IGNORECASE | re.DOTALL)
         purchases_b64 = match.group(1).strip() if match else None
         # Version
         version_match = re.search(r"<[^:]*:?version[^>]*>([^<]+)</[^:]*:?version>", text, re.IGNORECASE)
         version = version_match.group(1).strip() if version_match else None
-        return purchases_b64, version
+        return purchases_b64, version, method_name
     except Exception as e:
         logger.exception("Failed to extract purchases from SOAP: %s", e)
-        return None, None
+        return None, None, None
 
 
-SOAP_OK = """
-<?xml version="1.0" encoding="UTF-8"?>
-<soapenv:Envelope
-    xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
-  <soapenv:Body>
-    <ImportChecksResponse>
-      <Result>OK</Result>
-    </ImportChecksResponse>
-  </soapenv:Body>
-</soapenv:Envelope>"""
+def build_soap_response(method_name: str | None = None) -> str:
+    """
+    Build SOAP response according to official documentation.
+    Returns boolean True in case of successful package processing.
+    """
+    # Определяем имя метода ответа на основе входящего метода
+    if method_name:
+        if method_name == "processpurchases":
+            response_method = "processPurchasesResponse"
+        elif method_name == "processpurchaseswithti":
+            response_method = "processPurchasesWithTIResponse"
+        elif method_name == "processcancelledpurchases":
+            response_method = "processCancelledPurchasesResponse"
+        elif method_name == "processcancelledpurchaseswithti":
+            response_method = "processCancelledPurchasesWithTIResponse"
+        else:
+            response_method = "processPurchasesResponse"
+    else:
+        response_method = "processPurchasesResponse"
+    
+    return f"""<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <ns2:{response_method} xmlns:ns2="http://purchases.erpi.crystals.ru">
+      <return>true</return>
+    </ns2:{response_method}>
+  </soap:Body>
+</soap:Envelope>"""
+
 
 SOAP_HEADERS = {"Content-Type": "text/xml; charset=utf-8"}
 
 
 @app.route("/soap", methods=["POST"])
 def soap_endpoint():
-    """SOAP endpoint for Crystals SetLoyalty processPurchases."""
+    """
+    SOAP endpoint for Crystals SetLoyalty.
+    Supports: processPurchases, processPurchasesWithTI, 
+              processCancelledPurchases, processCancelledPurchasesWithTI.
+    Returns boolean True according to official documentation.
+    """
     body = request.get_data()
-    purchases_b64, version = extract_purchases_from_soap(body)
+    purchases_b64, version, method_name = extract_purchases_from_soap(body)
+
+    # Строим ответ на основе вызываемого метода
+    soap_response = build_soap_response(method_name)
 
     if not purchases_b64:
         logger.warning("No purchases data in request, returning OK anyway")
-        return SOAP_OK, 200, SOAP_HEADERS
+        return soap_response, 200, SOAP_HEADERS
 
     try:
         decoded = base64.b64decode(purchases_b64)
         xml_str = decoded.decode("utf-8")
     except Exception as e:
         logger.exception("Base64 decode failed: %s", e)
-        # Всё равно возвращаем 200, чтобы Crystals не повторял запрос
-        return SOAP_OK, 200, SOAP_HEADERS
+        # Всё равно возвращаем 200 с boolean True, чтобы Crystals не повторял запрос
+        return soap_response, 200, SOAP_HEADERS
 
     try:
         purchase_processor.process(xml_str, version=version)
+        logger.info("Successfully processed purchases, returning boolean True")
     except Exception as e:
         logger.exception("DB save failed: %s", e)
+        # Согласно документации, возвращаем True даже при ошибках БД,
+        # чтобы избежать повторной отправки пакета
 
-    logger.info("Response: %s", SOAP_OK)
-    return SOAP_OK, 200, SOAP_HEADERS
+    logger.info("Response: <return>true</return> (boolean True for successful processing)")
+    return soap_response, 200, SOAP_HEADERS
 
 
 @app.route("/health")
