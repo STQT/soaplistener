@@ -29,7 +29,7 @@ class PurchasesDataView(ModelView):
 
 
 admin = Admin(app, name="Crystals SetLoyalty", template_mode="bootstrap4")
-admin.add_view(PurchasesDataView(PurchasesData, name="Purchases (XML)", category="Данные"))
+admin.add_view(PurchasesDataView(PurchasesData, db.session, name="Purchases (XML)", category="Данные"))
 
 purchase_processor = PurchaseProcessor()
 
