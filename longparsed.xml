@@ -1,0 +1,1019 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<purchases count="21">
+    <purchase tabNumber="011" userName="Жумаева Сохиба " operationType="true" cashOperation="INCOME" operDay="2026-02-17+05:00" shop="5" cash="2" shift="276" number="269" saletime="2026-02-17T23:49:13.695+05:00" begintime="2026-02-17T23:48:57.570+05:00" amount="21470.00" discountAmount="0.00" denyPrintToDocuments="false" clientType="PRIVATE" fiscalDocNum="55631;269" factorynum="LG420230642222" inn="309529876" status="REGISTERED" cashType="TOUCH_2" fiscalnum="102064">
+        <plugin-property key="PROMO_PRINT_DISABLED" value="true"/>
+        <plugin-property key="FN_DOC_NUM_IN_SHIFT" value="260"/>
+        <plugin-property key="FISCAL_DOC_ID" value="55631"/>
+        <plugin-property key="CASHIER_NAME" value="Жумаева Сохиба"/>
+        <plugin-property key="fiscalsign" value="502421535512"/>
+        <plugin-property key="UID_PURCHASE" value="4d118b90-27a2-4c74-807c-87be509928d8"/>
+        <plugin-property key="CASH_TIME_ZONE" value="+05:00"/>
+        <plugin-property key="fiscalbarcode" value="https://ofd.soliq.uz/check?t=LG420230642222&amp;r=55631&amp;c=20260217234911&amp;s=502421535512"/>
+        <plugin-property key="fiscaldatetime" value="2026-02-17T23:49:11"/>
+        <positions>
+            <position order="2" departNumber="1" goodsCode="5766" barCode="4780047221052" count="1.000" cost="5490.00" nds="12.0" ndsSum="588.20" discountValue="0.00" costWithDiscount="5490.00" amount="5490.00" insertType="0" dateCommit="2026-02-17T23:48:59.781+05:00">
+                <plugin-property key="uzFfdSpic" value="00403999004015014"/>
+                <plugin-property key="uzFfdPackageCode" value="1405327"/>
+                <plugin-property key="salesTax" value="0"/>
+                <plugin-property key="ffdTag2108" value="0"/>
+                <plugin-property key="minimalPrice" value="-1"/>
+            </position>
+            <position order="3" departNumber="1" goodsCode="5765" barCode="4780047221045" count="1.000" cost="5490.00" nds="12.0" ndsSum="588.20" discountValue="0.00" costWithDiscount="5490.00" amount="5490.00" insertType="0" dateCommit="2026-02-17T23:49:02.257+05:00">
+                <plugin-property key="uzFfdSpic" value="00403999004015012"/>
+                <plugin-property key="uzFfdPackageCode" value="1405326"/>
+                <plugin-property key="salesTax" value="0"/>
+                <plugin-property key="ffdTag2108" value="0"/>
+                <plugin-property key="minimalPrice" value="-1"/>
+            </position>
+            <position order="1" departNumber="1" goodsCode="29133" barCode="4780069000871" count="1.000" cost="10490.00" nds="12.0" ndsSum="1123.90" discountValue="0.00" costWithDiscount="10490.00" amount="10490.00" insertType="0" dateCommit="2026-02-17T23:48:57.576+05:00">
+                <plugin-property key="uzFfdSpic" value="02202002004001008"/>
+                <plugin-property key="uzFfdPackageCode" value="1213553"/>
+                <plugin-property key="salesTax" value="0"/>
+                <plugin-property key="ffdTag2108" value="0"/>
+                <plugin-property key="minimalPrice" value="-1"/>
+            </position>
+        </positions>
+        <payments>
+            <payment order="1" typeClass="CashPaymentEntity" amount="50000.00" description="Оплата наличными"/>
+            <payment order="2" typeClass="CashChangePaymentEntity" amount="28530.00" description=""/>
+        </payments>
+        <discountCards/>
+        <bonus-discount/>
+    </purchase>
+    <purchase tabNumber="013" userName="Ражабова Дилнавоз " operationType="true" cashOperation="INCOME" operDay="2026-02-17+05:00" shop="5" cash="3" shift="451" number="191" saletime="2026-02-17T23:54:58.680+05:00" begintime="2026-02-17T23:54:35.960+05:00" amount="14490.00" discountAmount="0.00" denyPrintToDocuments="false" clientType="PRIVATE" fiscalDocNum="47111;191" factorynum="EMPTY" inn="309529876" status="REGISTERED" cashType="TOUCH_2" fiscalnum="NFM.5.3.0.1721512469224">
+        <plugin-property key="PROMO_PRINT_DISABLED" value="true"/>
+        <plugin-property key="FN_DOC_NUM_IN_SHIFT" value="186"/>
+        <plugin-property key="FISCAL_DOC_ID" value="47111"/>
+        <plugin-property key="CASHIER_NAME" value="Ражабова Дилнавоз"/>
+        <plugin-property key="UID_PURCHASE" value="b88c2a2f-5978-4ee5-aa57-99b0d7f4c673"/>
+        <plugin-property key="CASH_TIME_ZONE" value="+05:00"/>
+        <positions>
+            <position order="1" departNumber="1" goodsCode="6533" barCode="4780069000154" count="1.000" cost="14490.00" nds="12.0" ndsSum="1552.50" discountValue="0.00" costWithDiscount="14490.00" amount="14490.00" insertType="0" dateCommit="2026-02-17T23:54:35.970+05:00">
+                <plugin-property key="uzFfdSpic" value="02202002001010009"/>
+                <plugin-property key="uzFfdPackageCode" value="1218835"/>
+                <plugin-property key="salesTax" value="0"/>
+                <plugin-property key="ffdTag2108" value="0"/>
+                <plugin-property key="minimalPrice" value="-1"/>
+            </position>
+        </positions>
+        <payments>
+            <payment order="1" typeClass="BankCardPaymentEntity" amount="14490.00" description="Оплата банковской картой">
+                <plugin-property key="card.hash"/>
+                <plugin-property key="terminal.number"/>
+                <plugin-property key="cash.transaction.id" value="565955"/>
+                <plugin-property key="cash.transaction.date" value="2026-02-17 23:54:58.487"/>
+                <plugin-property key="code" value="bank"/>
+                <plugin-property key="bank.id" value="UZCARD"/>
+                <plugin-property key="ref.number"/>
+                <plugin-property key="subclass" value="UZCARD"/>
+                <plugin-property key="auth.code"/>
+                <plugin-property key="card.type" value="2"/>
+                <plugin-property key="bank.type" value="UNKNOWN"/>
+                <plugin-property key="card.number"/>
+            </payment>
+        </payments>
+        <discountCards/>
+        <bonus-discount/>
+    </purchase>
+    <purchase tabNumber="017" userName="Бахтийорова Жасмина " operationType="true" cashOperation="INCOME" operDay="2026-02-18+05:00" shop="1" cash="1" shift="158" number="1" saletime="2026-02-18T00:03:07.203+05:00" begintime="2026-02-18T00:02:42.857+05:00" amount="70470.00" discountAmount="0.00" denyPrintToDocuments="false" clientType="PRIVATE" fiscalDocNum="56996;1" factorynum="LG420230642217" inn="309529876" status="REGISTERED" cashType="TOUCH_2" fiscalnum="101559">
+        <plugin-property key="PROMO_PRINT_DISABLED" value="true"/>
+        <plugin-property key="FN_DOC_NUM_IN_SHIFT" value="2"/>
+        <plugin-property key="FISCAL_DOC_ID" value="56996"/>
+        <plugin-property key="CASHIER_NAME" value="Бахтийорова Жасмина"/>
+        <plugin-property key="fiscalsign" value="450319822010"/>
+        <plugin-property key="UID_PURCHASE" value="918e8d35-1e64-4e71-9b4d-5ea598cb7514"/>
+        <plugin-property key="CASH_TIME_ZONE" value="+05:00"/>
+        <plugin-property key="fiscalbarcode" value="https://ofd.soliq.uz/check?t=LG420230642217&amp;r=56996&amp;c=20260218000304&amp;s=450319822010"/>
+        <plugin-property key="fiscaldatetime" value="2026-02-18T00:03:04"/>
+        <positions>
+            <position order="1" departNumber="1" goodsCode="4580" barCode="4780013610910" count="2.000" cost="27990.00" nds="12.0" ndsSum="5997.90" discountValue="0.00" costWithDiscount="27990.00" amount="55980.00" insertType="0" dateCommit="2026-02-18T00:02:44.667+05:00">
+                <plugin-property key="uzFfdSpic" value="02008001001051035"/>
+                <plugin-property key="uzFfdPackageCode" value="1397455"/>
+                <plugin-property key="salesTax" value="0"/>
+                <plugin-property key="ffdTag2108" value="0"/>
+                <plugin-property key="minimalPrice" value="-1"/>
+            </position>
+            <position order="2" departNumber="1" goodsCode="6533" barCode="4780069000154" count="1.000" cost="14490.00" nds="12.0" ndsSum="1552.50" discountValue="0.00" costWithDiscount="14490.00" amount="14490.00" insertType="0" dateCommit="2026-02-18T00:02:46.571+05:00">
+                <plugin-property key="uzFfdSpic" value="02202002001010009"/>
+                <plugin-property key="uzFfdPackageCode" value="1218835"/>
+                <plugin-property key="salesTax" value="0"/>
+                <plugin-property key="ffdTag2108" value="0"/>
+                <plugin-property key="minimalPrice" value="-1"/>
+            </position>
+        </positions>
+        <payments>
+            <payment order="1" typeClass="CashPaymentEntity" amount="100000.00" description="Оплата наличными"/>
+            <payment order="2" typeClass="CashChangePaymentEntity" amount="29530.00" description=""/>
+        </payments>
+        <discountCards/>
+        <bonus-discount/>
+    </purchase>
+    <purchase tabNumber="017" userName="Бахтийорова Жасмина " operationType="true" cashOperation="INCOME" operDay="2026-02-18+05:00" shop="1" cash="1" shift="158" number="2" saletime="2026-02-18T00:03:43.440+05:00" begintime="2026-02-18T00:03:21.304+05:00" amount="21470.00" discountAmount="0.00" denyPrintToDocuments="false" clientType="PRIVATE" fiscalDocNum="56997;2" factorynum="LG420230642217" inn="309529876" status="REGISTERED" cashType="TOUCH_2" fiscalnum="101559">
+        <plugin-property key="PROMO_PRINT_DISABLED" value="true"/>
+        <plugin-property key="FN_DOC_NUM_IN_SHIFT" value="3"/>
+        <plugin-property key="FISCAL_DOC_ID" value="56997"/>
+        <plugin-property key="CASHIER_NAME" value="Бахтийорова Жасмина"/>
+        <plugin-property key="fiscalsign" value="492764122103"/>
+        <plugin-property key="UID_PURCHASE" value="69216fa8-daa1-4af6-93db-e5746b21f0a3"/>
+        <plugin-property key="CASH_TIME_ZONE" value="+05:00"/>
+        <plugin-property key="fiscalbarcode" value="https://ofd.soliq.uz/check?t=LG420230642217&amp;r=56997&amp;c=20260218000340&amp;s=492764122103"/>
+        <plugin-property key="fiscaldatetime" value="2026-02-18T00:03:40"/>
+        <positions>
+            <position order="2" departNumber="1" goodsCode="23501" barCode="4780030392400" count="1.000" cost="8490.00" nds="12.0" ndsSum="909.60" discountValue="0.00" costWithDiscount="8490.00" amount="8490.00" insertType="0" dateCommit="2026-02-18T00:03:23.975+05:00">
+                <plugin-property key="uzFfdSpic" value="01905012001000000"/>
+                <plugin-property key="uzFfdPackageCode" value="104579"/>
+                <plugin-property key="salesTax" value="0"/>
+                <plugin-property key="ffdTag2108" value="0"/>
+                <plugin-property key="minimalPrice" value="-1"/>
+            </position>
+            <position order="1" departNumber="1" goodsCode="5801" barCode="4780047222622" count="2.000" cost="6490.00" nds="12.0" ndsSum="1390.70" discountValue="0.00" costWithDiscount="6490.00" amount="12980.00" insertType="0" dateCommit="2026-02-18T00:03:22.115+05:00">
+                <plugin-property key="uzFfdSpic" value="00403002001000000"/>
+                <plugin-property key="uzFfdPackageCode" value="1444005"/>
+                <plugin-property key="salesTax" value="0"/>
+                <plugin-property key="ffdTag2108" value="0"/>
+                <plugin-property key="minimalPrice" value="-1"/>
+            </position>
+        </positions>
+        <payments>
+            <payment order="1" typeClass="CashPaymentEntity" amount="100000.00" description="Оплата наличными"/>
+            <payment order="2" typeClass="CashChangePaymentEntity" amount="78530.00" description=""/>
+        </payments>
+        <discountCards/>
+        <bonus-discount/>
+    </purchase>
+    <purchase tabNumber="017" userName="Бахтийорова Жасмина " operationType="true" cashOperation="INCOME" operDay="2026-02-18+05:00" shop="1" cash="1" shift="158" number="3" saletime="2026-02-18T00:04:45.553+05:00" begintime="2026-02-18T00:04:17.650+05:00" amount="38970.00" discountAmount="0.00" denyPrintToDocuments="false" clientType="PRIVATE" fiscalDocNum="56998;3" factorynum="LG420230642217" inn="309529876" status="REGISTERED" cashType="TOUCH_2" fiscalnum="101559">
+        <plugin-property key="PROMO_PRINT_DISABLED" value="true"/>
+        <plugin-property key="FN_DOC_NUM_IN_SHIFT" value="4"/>
+        <plugin-property key="FISCAL_DOC_ID" value="56998"/>
+        <plugin-property key="CASHIER_NAME" value="Бахтийорова Жасмина"/>
+        <plugin-property key="fiscalsign" value="316758547495"/>
+        <plugin-property key="UID_PURCHASE" value="824fae60-9d73-4333-a933-b3250ff998fa"/>
+        <plugin-property key="CASH_TIME_ZONE" value="+05:00"/>
+        <plugin-property key="fiscalbarcode" value="https://ofd.soliq.uz/check?t=LG420230642217&amp;r=56998&amp;c=20260218000442&amp;s=316758547495"/>
+        <plugin-property key="fiscaldatetime" value="2026-02-18T00:04:42"/>
+        <positions>
+            <position order="2" departNumber="1" goodsCode="6532" barCode="4780069000147" count="1.000" cost="10990.00" nds="12.0" ndsSum="1177.50" discountValue="0.00" costWithDiscount="10990.00" amount="10990.00" insertType="0" dateCommit="2026-02-18T00:04:23.547+05:00">
+                <plugin-property key="uzFfdSpic" value="02202002001010011"/>
+                <plugin-property key="ffdTag2108" value="0"/>
+                <plugin-property key="uzFfdPackageCode" value="1218851"/>
+                <plugin-property key="salesTax" value="0"/>
+                <plugin-property key="minimalPrice" value="-1"/>
+            </position>
+            <position order="1" departNumber="1" goodsCode="14246" barCode="984685" count="2.000" cost="13990.00" nds="12.0" ndsSum="2997.90" discountValue="0.00" costWithDiscount="13990.00" amount="27980.00" insertType="0" dateCommit="2026-02-18T00:04:17.655+05:00">
+                <plugin-property key="uzFfdSpic" value="01905007001169001"/>
+                <plugin-property key="uzFfdPackageCode" value="1384559"/>
+                <plugin-property key="salesTax" value="0"/>
+                <plugin-property key="ffdTag2108" value="0"/>
+                <plugin-property key="minimalPrice" value="-1"/>
+            </position>
+        </positions>
+        <payments>
+            <payment order="1" typeClass="CashPaymentEntity" amount="39000.00" description="Оплата наличными"/>
+            <payment order="2" typeClass="CashChangePaymentEntity" amount="30.00" description=""/>
+        </payments>
+        <discountCards/>
+        <bonus-discount/>
+    </purchase>
+    <purchase tabNumber="017" userName="Бахтийорова Жасмина " operationType="true" cashOperation="INCOME" operDay="2026-02-18+05:00" shop="1" cash="1" shift="158" number="6" saletime="2026-02-18T00:07:29.114+05:00" begintime="2026-02-18T00:07:14.239+05:00" amount="10490.00" discountAmount="0.00" denyPrintToDocuments="false" clientType="PRIVATE" fiscalDocNum="57001;6" factorynum="LG420230642217" inn="309529876" status="REGISTERED" cashType="TOUCH_2" fiscalnum="101559">
+        <plugin-property key="PROMO_PRINT_DISABLED" value="true"/>
+        <plugin-property key="FN_DOC_NUM_IN_SHIFT" value="7"/>
+        <plugin-property key="FISCAL_DOC_ID" value="57001"/>
+        <plugin-property key="CASHIER_NAME" value="Бахтийорова Жасмина"/>
+        <plugin-property key="fiscalsign" value="638555246322"/>
+        <plugin-property key="UID_PURCHASE" value="834c775f-4608-43e6-8745-f274298d6add"/>
+        <plugin-property key="CASH_TIME_ZONE" value="+05:00"/>
+        <plugin-property key="fiscalbarcode" value="https://ofd.soliq.uz/check?t=LG420230642217&amp;r=57001&amp;c=20260218000725&amp;s=638555246322"/>
+        <plugin-property key="fiscaldatetime" value="2026-02-18T00:07:25"/>
+        <positions>
+            <position order="1" departNumber="1" goodsCode="26757" barCode="4870022003664" count="1.000" cost="10490.00" nds="12.0" ndsSum="1123.90" discountValue="0.00" costWithDiscount="10490.00" amount="10490.00" insertType="0" dateCommit="2026-02-18T00:07:14.243+05:00">
+                <plugin-property key="uzFfdSpic" value="02202003001000000"/>
+                <plugin-property key="uzFfdPackageCode" value="1658220"/>
+                <plugin-property key="salesTax" value="0"/>
+                <plugin-property key="ffdTag2108" value="0"/>
+                <plugin-property key="minimalPrice" value="-1"/>
+            </position>
+        </positions>
+        <payments>
+            <payment order="1" typeClass="CashPaymentEntity" amount="10490.00" description="Оплата наличными"/>
+        </payments>
+        <discountCards/>
+        <bonus-discount/>
+    </purchase>
+    <purchase tabNumber="017" userName="Бахтийорова Жасмина " operationType="true" cashOperation="INCOME" operDay="2026-02-18+05:00" shop="1" cash="1" shift="158" number="7" saletime="2026-02-18T00:07:46.500+05:00" begintime="2026-02-18T00:07:29.855+05:00" amount="12974.00" discountAmount="0.00" denyPrintToDocuments="false" clientType="PRIVATE" fiscalDocNum="57002;7" factorynum="LG420230642217" inn="309529876" status="REGISTERED" cashType="TOUCH_2" fiscalnum="101559">
+        <plugin-property key="PROMO_PRINT_DISABLED" value="true"/>
+        <plugin-property key="FN_DOC_NUM_IN_SHIFT" value="8"/>
+        <plugin-property key="FISCAL_DOC_ID" value="57002"/>
+        <plugin-property key="CASHIER_NAME" value="Бахтийорова Жасмина"/>
+        <plugin-property key="fiscalsign" value="046370914693"/>
+        <plugin-property key="UID_PURCHASE" value="b078c838-903f-47b7-b761-e966e91725d6"/>
+        <plugin-property key="CASH_TIME_ZONE" value="+05:00"/>
+        <plugin-property key="fiscalbarcode" value="https://ofd.soliq.uz/check?t=LG420230642217&amp;r=57002&amp;c=20260218000742&amp;s=046370914693"/>
+        <plugin-property key="fiscaldatetime" value="2026-02-18T00:07:42"/>
+        <positions>
+            <position order="1" departNumber="1" goodsCode="30484" barCode="2000874" count="0.150" cost="86490.00" nds="12.0" ndsSum="1390.10" discountValue="0.00" costWithDiscount="86490.00" amount="12974.00" insertType="0" dateCommit="2026-02-18T00:07:29.859+05:00">
+                <plugin-property key="isWeightScanned" value="true"/>
+                <plugin-property key="uzFfdSpic" value="00305001002000000"/>
+                <plugin-property key="uzFfdPackageCode" value="1425217"/>
+                <plugin-property key="salesTax" value="0"/>
+                <plugin-property key="ffdTag2108" value="0"/>
+                <plugin-property key="minimalPrice" value="-1"/>
+            </position>
+        </positions>
+        <payments>
+            <payment order="1" typeClass="CashPaymentEntity" amount="12974.00" description="Оплата наличными"/>
+        </payments>
+        <discountCards/>
+        <bonus-discount/>
+    </purchase>
+    <purchase tabNumber="006" userName="Raximova Nigora " operationType="true" cashOperation="INCOME" operDay="2026-02-18+05:00" shop="3" cash="2" shift="261" number="5" saletime="2026-02-18T00:18:24.592+05:00" begintime="2026-02-18T00:17:58.143+05:00" amount="46990.00" discountAmount="0.00" denyPrintToDocuments="false" clientType="PRIVATE" fiscalDocNum="49611;5" factorynum="LG420230642214" inn="309529876" status="REGISTERED" cashType="TOUCH_2" fiscalnum="101556">
+        <plugin-property key="PROMO_PRINT_DISABLED" value="true"/>
+        <plugin-property key="FN_DOC_NUM_IN_SHIFT" value="5"/>
+        <plugin-property key="FISCAL_DOC_ID" value="49611"/>
+        <plugin-property key="CASHIER_NAME" value="Raximova Nigora"/>
+        <plugin-property key="fiscalsign" value="742331875950"/>
+        <plugin-property key="UID_PURCHASE" value="29ba28fe-34cb-4268-b3a6-68bf4dc0cc76"/>
+        <plugin-property key="CASH_TIME_ZONE" value="+05:00"/>
+        <plugin-property key="fiscalbarcode" value="https://ofd.soliq.uz/check?t=LG420230642214&amp;r=49611&amp;c=20260218001822&amp;s=742331875950"/>
+        <plugin-property key="fiscaldatetime" value="2026-02-18T00:18:22"/>
+        <positions>
+            <position order="1" departNumber="1" goodsCode="9628" barCode="80177425" count="1.000" cost="46990.00" nds="12.0" ndsSum="5034.60" discountValue="0.00" costWithDiscount="46990.00" amount="46990.00" insertType="0" dateCommit="2026-02-18T00:17:58.149+05:00">
+                <plugin-property key="uzFfdSpic" value="01806001002003002"/>
+                <plugin-property key="uzFfdPackageCode" value="1324340"/>
+                <plugin-property key="salesTax" value="0"/>
+                <plugin-property key="ffdTag2108" value="0"/>
+                <plugin-property key="minimalPrice" value="-1"/>
+            </position>
+        </positions>
+        <payments>
+            <payment order="1" typeClass="clickpass.service.payment" amount="46990.00" description="Оплата Click PASS">
+                <plugin-property key="clickpass.payment.id" value="4808674800"/>
+            </payment>
+        </payments>
+        <discountCards/>
+        <bonus-discount/>
+    </purchase>
+    <purchase tabNumber="017" userName="Бахтийорова Жасмина " operationType="true" cashOperation="INCOME" operDay="2026-02-18+05:00" shop="1" cash="1" shift="158" number="10" saletime="2026-02-18T00:26:32.469+05:00" begintime="2026-02-18T00:26:11.061+05:00" amount="24980.00" discountAmount="0.00" denyPrintToDocuments="false" clientType="PRIVATE" fiscalDocNum="57005;10" factorynum="LG420230642217" inn="309529876" status="REGISTERED" cashType="TOUCH_2" fiscalnum="101559">
+        <plugin-property key="PROMO_PRINT_DISABLED" value="true"/>
+        <plugin-property key="FN_DOC_NUM_IN_SHIFT" value="11"/>
+        <plugin-property key="FISCAL_DOC_ID" value="57005"/>
+        <plugin-property key="CASHIER_NAME" value="Бахтийорова Жасмина"/>
+        <plugin-property key="fiscalsign" value="540039872455"/>
+        <plugin-property key="UID_PURCHASE" value="4be7d431-be9f-4f6d-bf73-58e37bafc0db"/>
+        <plugin-property key="CASH_TIME_ZONE" value="+05:00"/>
+        <plugin-property key="fiscalbarcode" value="https://ofd.soliq.uz/check?t=LG420230642217&amp;r=57005&amp;c=20260218002629&amp;s=540039872455"/>
+        <plugin-property key="fiscaldatetime" value="2026-02-18T00:26:29"/>
+        <positions>
+            <position order="1" departNumber="1" goodsCode="6930" barCode="4780101733965" count="2.000" cost="12490.00" nds="12.0" ndsSum="2676.40" discountValue="0.00" costWithDiscount="12490.00" amount="24980.00" insertType="0" dateCommit="2026-02-18T00:26:12.995+05:00">
+                <plugin-property key="uzFfdSpic" value="02202002001352019"/>
+                <plugin-property key="uzFfdPackageCode" value="1217932"/>
+                <plugin-property key="salesTax" value="0"/>
+                <plugin-property key="ffdTag2108" value="0"/>
+                <plugin-property key="minimalPrice" value="-1"/>
+            </position>
+        </positions>
+        <payments>
+            <payment order="1" typeClass="CashPaymentEntity" amount="25000.00" description="Оплата наличными"/>
+            <payment order="2" typeClass="CashChangePaymentEntity" amount="20.00" description=""/>
+        </payments>
+        <discountCards/>
+        <bonus-discount/>
+    </purchase>
+    <purchase tabNumber="010" userName="Эргашева Дилором " operationType="true" cashOperation="INCOME" operDay="2026-02-18+05:00" shop="5" cash="2" shift="277" number="7" saletime="2026-02-18T00:28:16.689+05:00" begintime="2026-02-18T00:27:31.697+05:00" amount="125990.00" discountAmount="0.00" denyPrintToDocuments="false" clientType="PRIVATE" fiscalDocNum="55637;7" factorynum="LG420230642222" inn="309529876" status="REGISTERED" cashType="TOUCH_2" fiscalnum="102064">
+        <plugin-property key="PROMO_PRINT_DISABLED" value="true"/>
+        <plugin-property key="FISCAL_DOC_ID" value="55637"/>
+        <plugin-property key="FN_DOC_NUM_IN_SHIFT" value="7"/>
+        <plugin-property key="CASHIER_NAME" value="Эргашева Дилором"/>
+        <plugin-property key="fiscalsign" value="934191376402"/>
+        <plugin-property key="UID_PURCHASE" value="4e79985c-cef7-455f-9d10-5a9dfae7a13d"/>
+        <plugin-property key="CASH_TIME_ZONE" value="+05:00"/>
+        <plugin-property key="fiscalbarcode" value="https://ofd.soliq.uz/check?t=LG420230642222&amp;r=55637&amp;c=20260218002814&amp;s=934191376402"/>
+        <plugin-property key="fiscaldatetime" value="2026-02-18T00:28:14"/>
+        <positions>
+            <position order="1" departNumber="1" goodsCode="28557" barCode="2748484180839" count="1.000" cost="125990.00" nds="12.0" ndsSum="13498.90" discountValue="0.00" costWithDiscount="125990.00" amount="125990.00" insertType="0" dateCommit="2026-02-18T00:27:31.703+05:00">
+                <plugin-property key="uzFfdSpic" value="09503018043000000"/>
+                <plugin-property key="uzFfdPackageCode" value="1432927"/>
+                <plugin-property key="salesTax" value="0"/>
+                <plugin-property key="ffdTag2108" value="0"/>
+                <plugin-property key="minimalPrice" value="-1"/>
+            </position>
+        </positions>
+        <payments>
+            <payment order="1" typeClass="BankCardPaymentEntity" amount="125990.00" description="Оплата банковской картой">
+                <plugin-property key="card.hash"/>
+                <plugin-property key="terminal.number"/>
+                <plugin-property key="cash.transaction.id" value="590035"/>
+                <plugin-property key="cash.transaction.date" value="2026-02-18 00:28:12.991"/>
+                <plugin-property key="code" value="bank"/>
+                <plugin-property key="bank.id" value="UZCARD"/>
+                <plugin-property key="ref.number"/>
+                <plugin-property key="subclass" value="UZCARD"/>
+                <plugin-property key="auth.code"/>
+                <plugin-property key="card.type" value="2"/>
+                <plugin-property key="bank.type" value="UNKNOWN"/>
+                <plugin-property key="card.number"/>
+            </payment>
+        </payments>
+        <discountCards/>
+        <bonus-discount/>
+    </purchase>
+    <purchase tabNumber="010" userName="Эргашева Дилором " operationType="true" cashOperation="INCOME" operDay="2026-02-18+05:00" shop="5" cash="2" shift="277" number="8" saletime="2026-02-18T00:34:11.344+05:00" begintime="2026-02-18T00:32:41.480+05:00" amount="238551.00" discountAmount="0.00" denyPrintToDocuments="false" clientType="PRIVATE" fiscalDocNum="55638;8" factorynum="LG420230642222" inn="309529876" status="REGISTERED" cashType="TOUCH_2" fiscalnum="102064">
+        <plugin-property key="PROMO_PRINT_DISABLED" value="true"/>
+        <plugin-property key="FN_DOC_NUM_IN_SHIFT" value="8"/>
+        <plugin-property key="FISCAL_DOC_ID" value="55638"/>
+        <plugin-property key="CASHIER_NAME" value="Эргашева Дилором"/>
+        <plugin-property key="fiscalsign" value="742864411574"/>
+        <plugin-property key="UID_PURCHASE" value="c8b42e5d-89e6-48a5-adc8-fa0b38750fb0"/>
+        <plugin-property key="CASH_TIME_ZONE" value="+05:00"/>
+        <plugin-property key="fiscalbarcode" value="https://ofd.soliq.uz/check?t=LG420230642222&amp;r=55638&amp;c=20260218003408&amp;s=742864411574"/>
+        <plugin-property key="fiscaldatetime" value="2026-02-18T00:34:08"/>
+        <positions>
+            <position order="1" departNumber="1" goodsCode="23496" barCode="2001395" count="0.138" cost="54490.00" nds="12.0" ndsSum="805.70" discountValue="0.00" costWithDiscount="54490.00" amount="7520.00" insertType="0" dateCommit="2026-02-18T00:32:41.488+05:00">
+                <plugin-property key="isWeightScanned" value="true"/>
+                <plugin-property key="uzFfdSpic" value="00403999005000000"/>
+                <plugin-property key="uzFfdPackageCode" value="1425527"/>
+                <plugin-property key="salesTax" value="0"/>
+                <plugin-property key="ffdTag2108" value="0"/>
+                <plugin-property key="minimalPrice" value="-1"/>
+            </position>
+            <position order="4" departNumber="1" goodsCode="29852" barCode="2000859" count="0.476" cost="41490.00" nds="12.0" ndsSum="2116.00" discountValue="0.00" costWithDiscount="41490.00" amount="19749.00" insertType="0" dateCommit="2026-02-18T00:32:51.541+05:00">
+                <plugin-property key="isWeightScanned" value="true"/>
+                <plugin-property key="uzFfdSpic" value="01905012001000000"/>
+                <plugin-property key="uzFfdPackageCode" value="1433182"/>
+                <plugin-property key="salesTax" value="0"/>
+                <plugin-property key="ffdTag2108" value="0"/>
+                <plugin-property key="minimalPrice" value="-1"/>
+            </position>
+            <position order="3" departNumber="1" goodsCode="9619" barCode="2008004" count="0.390" cost="41490.00" nds="12.0" ndsSum="1733.70" discountValue="0.00" costWithDiscount="41490.00" amount="16181.00" insertType="0" dateCommit="2026-02-18T00:32:48.970+05:00">
+                <plugin-property key="isWeightScanned" value="true"/>
+                <plugin-property key="uzFfdSpic" value="01905002008000000"/>
+                <plugin-property key="uzFfdPackageCode" value="1437666"/>
+                <plugin-property key="salesTax" value="0"/>
+                <plugin-property key="ffdTag2108" value="0"/>
+                <plugin-property key="minimalPrice" value="-1"/>
+            </position>
+            <position order="6" departNumber="1" goodsCode="16297" barCode="410600" count="1.000" cost="490.00" nds="12.0" ndsSum="52.50" discountValue="0.00" costWithDiscount="490.00" amount="490.00" insertType="2" dateCommit="2026-02-18T00:32:58.896+05:00">
+                <plugin-property key="uzFfdSpic" value="03923001002000000"/>
+                <plugin-property key="uzFfdPackageCode" value="1489210"/>
+                <plugin-property key="salesTax" value="0"/>
+                <plugin-property key="ffdTag2108" value="0"/>
+                <plugin-property key="minimalPrice" value="-1"/>
+            </position>
+            <position order="5" departNumber="1" goodsCode="12393" barCode="2001414" count="4.966" cost="35990.00" nds="12.0" ndsSum="19149.20" discountValue="0.00" costWithDiscount="35990.00" amount="178726.00" insertType="0" dateCommit="2026-02-18T00:32:55.553+05:00">
+                <plugin-property key="isWeightScanned" value="true"/>
+                <plugin-property key="uzFfdSpic" value="00810999018000000"/>
+                <plugin-property key="uzFfdPackageCode" value="1394292"/>
+                <plugin-property key="salesTax" value="0"/>
+                <plugin-property key="ffdTag2108" value="0"/>
+                <plugin-property key="minimalPrice" value="-1"/>
+            </position>
+            <position order="2" departNumber="1" goodsCode="20030" barCode="2006666" count="0.454" cost="34990.00" nds="12.0" ndsSum="1702.00" discountValue="0.00" costWithDiscount="34990.00" amount="15885.00" insertType="0" dateCommit="2026-02-18T00:32:45.768+05:00">
+                <plugin-property key="isWeightScanned" value="true"/>
+                <plugin-property key="uzFfdSpic" value="01905012001000000"/>
+                <plugin-property key="uzFfdPackageCode" value="1433182"/>
+                <plugin-property key="salesTax" value="0"/>
+                <plugin-property key="ffdTag2108" value="0"/>
+                <plugin-property key="minimalPrice" value="-1"/>
+            </position>
+        </positions>
+        <payments>
+            <payment order="1" typeClass="CashPaymentEntity" amount="239000.00" description="Оплата наличными"/>
+            <payment order="2" typeClass="CashChangePaymentEntity" amount="449.00" description=""/>
+        </payments>
+        <discountCards/>
+        <bonus-discount/>
+    </purchase>
+    <purchase tabNumber="010" userName="Эргашева Дилором " operationType="true" cashOperation="INCOME" operDay="2026-02-18+05:00" shop="5" cash="2" shift="277" number="9" saletime="2026-02-18T00:36:24.005+05:00" begintime="2026-02-18T00:34:16.478+05:00" amount="28060.00" discountAmount="0.00" denyPrintToDocuments="false" clientType="PRIVATE" fiscalDocNum="55639;9" factorynum="LG420230642222" inn="309529876" storno="true" status="REGISTERED" cashType="TOUCH_2" fiscalnum="102064">
+        <plugin-property key="PROMO_PRINT_DISABLED" value="true"/>
+        <plugin-property key="FN_DOC_NUM_IN_SHIFT" value="9"/>
+        <plugin-property key="FISCAL_DOC_ID" value="55639"/>
+        <plugin-property key="CASHIER_NAME" value="Эргашева Дилором"/>
+        <plugin-property key="fiscalsign" value="237384852089"/>
+        <plugin-property key="UID_PURCHASE" value="ddbfacda-7b06-4076-9241-f717a3cec381"/>
+        <plugin-property key="CASH_TIME_ZONE" value="+05:00"/>
+        <plugin-property key="fiscalbarcode" value="https://ofd.soliq.uz/check?t=LG420230642222&amp;r=55639&amp;c=20260218003621&amp;s=237384852089"/>
+        <plugin-property key="fiscaldatetime" value="2026-02-18T00:36:21"/>
+        <positions>
+            <position order="2" departNumber="1" goodsCode="9795" barCode="2008434" count="0.754" cost="21990.00" nds="12.0" ndsSum="1776.40" discountValue="0.00" costWithDiscount="21990.00" amount="16580.00" insertType="0" dateCommit="2026-02-18T00:34:38.381+05:00">
+                <plugin-property key="isWeightScanned" value="true"/>
+                <plugin-property key="uzFfdSpic" value="00808002001000000"/>
+                <plugin-property key="uzFfdPackageCode" value="1394520"/>
+                <plugin-property key="salesTax" value="0"/>
+                <plugin-property key="ffdTag2108" value="0"/>
+                <plugin-property key="minimalPrice" value="-1"/>
+            </position>
+            <position order="1" departNumber="1" goodsCode="6532" barCode="4780069000147" count="1.000" cost="10990.00" nds="12.0" ndsSum="1177.50" discountValue="0.00" costWithDiscount="10990.00" amount="10990.00" insertType="0" dateCommit="2026-02-18T00:34:32.390+05:00">
+                <plugin-property key="uzFfdSpic" value="02202002001010011"/>
+                <plugin-property key="uzFfdPackageCode" value="1218851"/>
+                <plugin-property key="salesTax" value="0"/>
+                <plugin-property key="ffdTag2108" value="0"/>
+                <plugin-property key="minimalPrice" value="-1"/>
+            </position>
+            <position order="3" departNumber="1" goodsCode="16297" barCode="410600" count="1.000" cost="490.00" nds="12.0" ndsSum="52.50" discountValue="0.00" costWithDiscount="490.00" amount="490.00" insertType="2" dateCommit="2026-02-18T00:35:15.393+05:00">
+                <plugin-property key="uzFfdSpic" value="03923001002000000"/>
+                <plugin-property key="uzFfdPackageCode" value="1489210"/>
+                <plugin-property key="salesTax" value="0"/>
+                <plugin-property key="ffdTag2108" value="0"/>
+                <plugin-property key="minimalPrice" value="-1"/>
+            </position>
+        </positions>
+        <payments>
+            <payment order="1" typeClass="CashPaymentEntity" amount="29000.00" description="Оплата наличными"/>
+            <payment order="2" typeClass="CashChangePaymentEntity" amount="940.00" description=""/>
+        </payments>
+        <discountCards/>
+        <bonus-discount/>
+    </purchase>
+    <purchase tabNumber="031" userName="Choriyeva Gulibonu " operationType="true" cashOperation="INCOME" operDay="2026-02-18+05:00" shop="8" cash="3" shift="548" number="7" saletime="2026-02-18T00:40:31.516+05:00" begintime="2026-02-18T00:38:29.569+05:00" amount="28460.00" discountAmount="0.00" denyPrintToDocuments="false" clientType="PRIVATE" fiscalDocNum="99899;7" factorynum="LG420230628061" inn="309529876" status="REGISTERED" cashType="TOUCH_2" fiscalnum="101554">
+        <plugin-property key="PROMO_PRINT_DISABLED" value="true"/>
+        <plugin-property key="FN_DOC_NUM_IN_SHIFT" value="6"/>
+        <plugin-property key="FISCAL_DOC_ID" value="99899"/>
+        <plugin-property key="CASHIER_NAME" value="Choriyeva Gulibonu"/>
+        <plugin-property key="fiscalsign" value="429070305445"/>
+        <plugin-property key="UID_PURCHASE" value="5b816a8a-38ea-4b19-8e08-10272e543503"/>
+        <plugin-property key="CASH_TIME_ZONE" value="+05:00"/>
+        <plugin-property key="fiscalbarcode" value="https://ofd.soliq.uz/check?t=LG420230628061&amp;r=99899&amp;c=20260218004028&amp;s=429070305445"/>
+        <plugin-property key="fiscaldatetime" value="2026-02-18T00:40:28"/>
+        <positions>
+            <position order="3" departNumber="1" goodsCode="4832" barCode="4780022620153" count="1.000" cost="9990.00" nds="12.0" ndsSum="1070.40" discountValue="0.00" costWithDiscount="9990.00" amount="9990.00" insertType="0" dateCommit="2026-02-18T00:38:37.756+05:00">
+                <plugin-property key="uzFfdSpic" value="02202002001039025"/>
+                <plugin-property key="uzFfdPackageCode" value="1228507"/>
+                <plugin-property key="salesTax" value="0"/>
+                <plugin-property key="ffdTag2108" value="0"/>
+                <plugin-property key="minimalPrice" value="-1"/>
+            </position>
+            <position order="1" departNumber="1" goodsCode="23263" barCode="596391" count="1.000" cost="7490.00" nds="12.0" ndsSum="802.50" discountValue="0.00" costWithDiscount="7490.00" amount="7490.00" insertType="0" dateCommit="2026-02-18T00:38:29.574+05:00">
+                <plugin-property key="uzFfdSpic" value="01905002007000000"/>
+                <plugin-property key="uzFfdPackageCode" value="1437690"/>
+                <plugin-property key="salesTax" value="0"/>
+                <plugin-property key="ffdTag2108" value="0"/>
+                <plugin-property key="minimalPrice" value="-1"/>
+            </position>
+            <position order="2" departNumber="1" goodsCode="754" barCode="354038" count="2.000" cost="5490.00" nds="12.0" ndsSum="1176.40" discountValue="0.00" costWithDiscount="5490.00" amount="10980.00" insertType="0" dateCommit="2026-02-18T00:38:35.355+05:00">
+                <plugin-property key="uzFfdSpic" value="01905002004000000"/>
+                <plugin-property key="uzFfdPackageCode" value="1437633"/>
+                <plugin-property key="salesTax" value="0"/>
+                <plugin-property key="ffdTag2108" value="0"/>
+                <plugin-property key="minimalPrice" value="-1"/>
+            </position>
+        </positions>
+        <payments>
+            <payment order="1" typeClass="BankCardPaymentEntity" amount="28460.00" description="Оплата банковской картой">
+                <plugin-property key="card.hash"/>
+                <plugin-property key="terminal.number"/>
+                <plugin-property key="cash.transaction.id" value="155035"/>
+                <plugin-property key="cash.transaction.date" value="2026-02-18 00:40:27.783"/>
+                <plugin-property key="code" value="bank"/>
+                <plugin-property key="bank.id" value="HUMO"/>
+                <plugin-property key="ref.number"/>
+                <plugin-property key="subclass" value="HUMO"/>
+                <plugin-property key="auth.code"/>
+                <plugin-property key="card.type" value="2"/>
+                <plugin-property key="bank.type" value="UNKNOWN"/>
+                <plugin-property key="card.number"/>
+            </payment>
+        </payments>
+        <discountCards/>
+        <bonus-discount/>
+    </purchase>
+    <purchase tabNumber="010" userName="Эргашева Дилором " operationType="true" cashOperation="INCOME" operDay="2026-02-18+05:00" shop="5" cash="2" shift="277" number="11" saletime="2026-02-18T00:55:04.992+05:00" begintime="2026-02-18T00:54:11.016+05:00" amount="13980.00" discountAmount="0.00" denyPrintToDocuments="false" clientType="PRIVATE" fiscalDocNum="55641;11" factorynum="LG420230642222" inn="309529876" status="REGISTERED" cashType="TOUCH_2" fiscalnum="102064">
+        <plugin-property key="PROMO_PRINT_DISABLED" value="true"/>
+        <plugin-property key="FISCAL_DOC_ID" value="55641"/>
+        <plugin-property key="FN_DOC_NUM_IN_SHIFT" value="11"/>
+        <plugin-property key="CASHIER_NAME" value="Эргашева Дилором"/>
+        <plugin-property key="fiscalsign" value="540357174475"/>
+        <plugin-property key="UID_PURCHASE" value="d74ab140-5009-45af-bbd5-3797e6e7537e"/>
+        <plugin-property key="CASH_TIME_ZONE" value="+05:00"/>
+        <plugin-property key="fiscalbarcode" value="https://ofd.soliq.uz/check?t=LG420230642222&amp;r=55641&amp;c=20260218005502&amp;s=540357174475"/>
+        <plugin-property key="fiscaldatetime" value="2026-02-18T00:55:02"/>
+        <positions>
+            <position order="1" departNumber="1" goodsCode="30144" barCode="3086126726670" count="2.000" cost="6990.00" nds="12.0" ndsSum="1497.90" discountValue="0.00" costWithDiscount="6990.00" amount="13980.00" insertType="0" dateCommit="2026-02-18T00:54:11.023+05:00">
+                <plugin-property key="uzFfdSpic" value="03924001002000000"/>
+                <plugin-property key="uzFfdPackageCode" value="1489216"/>
+                <plugin-property key="salesTax" value="0"/>
+                <plugin-property key="ffdTag2108" value="0"/>
+                <plugin-property key="minimalPrice" value="-1"/>
+            </position>
+        </positions>
+        <payments>
+            <payment order="1" typeClass="CashPaymentEntity" amount="20000.00" description="Оплата наличными"/>
+            <payment order="2" typeClass="CashChangePaymentEntity" amount="6020.00" description=""/>
+        </payments>
+        <discountCards/>
+        <bonus-discount/>
+    </purchase>
+    <purchase tabNumber="017" userName="Бахтийорова Жасмина " operationType="true" cashOperation="INCOME" operDay="2026-02-18+05:00" shop="1" cash="1" shift="158" number="8" saletime="2026-02-18T00:11:48.776+05:00" begintime="2026-02-18T00:08:07.451+05:00" amount="264760.00" discountAmount="0.00" denyPrintToDocuments="false" clientType="PRIVATE" client_guid="470554" fiscalDocNum="57003;8" factorynum="LG420230642217" inn="309529876" status="REGISTERED" cashType="TOUCH_2" fiscalnum="101559">
+        <plugin-property key="PROMO_PRINT_DISABLED" value="true"/>
+        <plugin-property key="FN_DOC_NUM_IN_SHIFT" value="9"/>
+        <plugin-property key="FISCAL_DOC_ID" value="57003"/>
+        <plugin-property key="CASHIER_NAME" value="Бахтийорова Жасмина"/>
+        <plugin-property key="fiscalsign" value="935076591069"/>
+        <plugin-property key="UID_PURCHASE" value="bc93248e-ccf1-4852-bb06-d456f35629d6"/>
+        <plugin-property key="CASH_TIME_ZONE" value="+05:00"/>
+        <plugin-property key="fiscalbarcode" value="https://ofd.soliq.uz/check?t=LG420230642217&amp;r=57003&amp;c=20260218001146&amp;s=935076591069"/>
+        <plugin-property key="fiscaldatetime" value="2026-02-18T00:11:46"/>
+        <positions>
+            <position order="8" departNumber="1" goodsCode="6730" barCode="4780077840391" count="1.000" cost="25990.00" nds="12.0" ndsSum="2784.60" discountValue="0.00" costWithDiscount="25990.00" amount="25990.00" insertType="0" dateCommit="2026-02-18T00:08:38.024+05:00">
+                <plugin-property key="uzFfdSpic" value="01704001009000000"/>
+                <plugin-property key="uzFfdPackageCode" value="1352104"/>
+                <plugin-property key="salesTax" value="0"/>
+                <plugin-property key="ffdTag2108" value="0"/>
+                <plugin-property key="minimalPrice" value="-1"/>
+            </position>
+            <position order="3" departNumber="1" goodsCode="30105" barCode="2748484183717" count="1.000" cost="21990.00" nds="12.0" ndsSum="2356.10" discountValue="0.00" costWithDiscount="21990.00" amount="21990.00" insertType="0" dateCommit="2026-02-18T00:08:14.003+05:00">
+                <plugin-property key="uzFfdSpic" value="00401002001014001"/>
+                <plugin-property key="uzFfdPackageCode" value="1412378"/>
+                <plugin-property key="salesTax" value="0"/>
+                <plugin-property key="ffdTag2108" value="0"/>
+                <plugin-property key="minimalPrice" value="-1"/>
+            </position>
+            <position order="5" departNumber="1" goodsCode="12403" barCode="2001504" count="0.456" cost="155990.00" nds="12.0" ndsSum="7621.20" discountValue="0.00" costWithDiscount="155990.00" amount="71131.00" insertType="0" dateCommit="2026-02-18T00:08:19.967+05:00">
+                <plugin-property key="isWeightScanned" value="true"/>
+                <plugin-property key="uzFfdSpic" value="00801004001000000"/>
+                <plugin-property key="uzFfdPackageCode" value="1394221"/>
+                <plugin-property key="salesTax" value="0"/>
+                <plugin-property key="ffdTag2108" value="0"/>
+                <plugin-property key="minimalPrice" value="-1"/>
+            </position>
+            <position order="4" departNumber="1" goodsCode="24054" barCode="2003980" count="0.400" cost="103990.00" nds="12.0" ndsSum="4456.70" discountValue="0.00" costWithDiscount="103990.00" amount="41596.00" insertType="0" dateCommit="2026-02-18T00:08:17.008+05:00">
+                <plugin-property key="isWeightScanned" value="true"/>
+                <plugin-property key="uzFfdSpic" value="00811001001000000"/>
+                <plugin-property key="uzFfdPackageCode" value="1394689"/>
+                <plugin-property key="salesTax" value="0"/>
+                <plugin-property key="ffdTag2108" value="0"/>
+                <plugin-property key="minimalPrice" value="-1"/>
+            </position>
+            <position order="1" departNumber="1" goodsCode="5341" barCode="4780031850626" count="1.000" cost="37490.00" nds="12.0" ndsSum="4016.80" discountValue="0.00" costWithDiscount="37490.00" amount="37490.00" insertType="0" dateCommit="2026-02-18T00:08:07.455+05:00">
+                <plugin-property key="uzFfdSpic" value="01517001002025001"/>
+                <plugin-property key="uzFfdPackageCode" value="1428969"/>
+                <plugin-property key="salesTax" value="0"/>
+                <plugin-property key="ffdTag2108" value="0"/>
+                <plugin-property key="minimalPrice" value="-1"/>
+            </position>
+            <position order="6" departNumber="1" goodsCode="20864" barCode="2006983" count="0.452" cost="64990.00" nds="12.0" ndsSum="3147.30" discountValue="0.00" costWithDiscount="64990.00" amount="29375.00" insertType="0" dateCommit="2026-02-18T00:08:21.885+05:00">
+                <plugin-property key="isWeightScanned" value="true"/>
+                <plugin-property key="uzFfdSpic" value="00811001001000000"/>
+                <plugin-property key="uzFfdPackageCode" value="1394689"/>
+                <plugin-property key="salesTax" value="0"/>
+                <plugin-property key="ffdTag2108" value="0"/>
+                <plugin-property key="minimalPrice" value="-1"/>
+            </position>
+            <position order="2" departNumber="1" goodsCode="31932" barCode="2773288805732" count="1.000" cost="25490.00" nds="12.0" ndsSum="2731.10" discountValue="0.00" costWithDiscount="25490.00" amount="25490.00" insertType="2" dateCommit="2026-02-18T00:08:09.300+05:00">
+                <plugin-property key="uzFfdSpic" value="00407001001000000"/>
+                <plugin-property key="uzFfdPackageCode" value="1777535"/>
+                <plugin-property key="salesTax" value="0"/>
+                <plugin-property key="ffdTag2108" value="0"/>
+                <plugin-property key="minimalPrice" value="-1"/>
+            </position>
+            <position order="7" departNumber="1" goodsCode="22310" barCode="2009098" count="0.498" cost="23490.00" nds="12.0" ndsSum="1253.40" discountValue="0.00" costWithDiscount="23490.00" amount="11698.00" insertType="0" dateCommit="2026-02-18T00:08:23.592+05:00">
+                <plugin-property key="isWeightScanned" value="true"/>
+                <plugin-property key="uzFfdSpic" value="01704001009000000"/>
+                <plugin-property key="uzFfdPackageCode" value="1352105"/>
+                <plugin-property key="salesTax" value="0"/>
+                <plugin-property key="ffdTag2108" value="0"/>
+                <plugin-property key="minimalPrice" value="-1"/>
+            </position>
+        </positions>
+        <payments>
+            <payment order="1" typeClass="BankCardPaymentEntity" amount="264760.00" description="Оплата банковской картой">
+                <plugin-property key="card.hash"/>
+                <plugin-property key="terminal.number"/>
+                <plugin-property key="cash.transaction.id" value="890040"/>
+                <plugin-property key="cash.transaction.date" value="2026-02-18 00:11:44.962"/>
+                <plugin-property key="code" value="bank"/>
+                <plugin-property key="bank.id" value="UZCARD"/>
+                <plugin-property key="ref.number"/>
+                <plugin-property key="subclass" value="UZCARD"/>
+                <plugin-property key="auth.code"/>
+                <plugin-property key="card.type" value="2"/>
+                <plugin-property key="bank.type" value="UNKNOWN"/>
+                <plugin-property key="card.number"/>
+            </payment>
+        </payments>
+        <discounts/>
+        <discountCards>
+            <discountCard>2900000121560</discountCard>
+        </discountCards>
+        <card type="INTERNAL" card_type_guid="1" number="2900000121560" addedBy="SCANNER"/>
+        <bonus-discount/>
+        <bonuses>
+            <bonus bonusesType="BONUS_SR10" chargeOnBonuses="7942.80" cardNumber="2900000121560" bonusaccountsid="1" AdvertActExternalCode="SR10_119038035" AdvertActDiscountType="65" AdvertActGUID="161045715">
+                <bonusPosition positionId="1" goodCode="5341" amount="1124.70" quantity="1.000"/>
+                <bonusPosition positionId="2" goodCode="31932" amount="764.70" quantity="1.000"/>
+                <bonusPosition positionId="3" goodCode="30105" amount="659.70" quantity="1.000"/>
+                <bonusPosition positionId="4" goodCode="24054" amount="1247.87" quantity="0.400"/>
+                <bonusPosition positionId="5" goodCode="12403" amount="2133.92" quantity="0.456"/>
+                <bonusPosition positionId="6" goodCode="20864" amount="881.25" quantity="0.452"/>
+                <bonusPosition positionId="7" goodCode="22310" amount="350.95" quantity="0.498"/>
+                <bonusPosition positionId="8" goodCode="6730" amount="779.71" quantity="1.000"/>
+            </bonus>
+        </bonuses>
+    </purchase>
+    <purchase tabNumber="010" userName="Эргашева Дилором " operationType="true" cashOperation="INCOME" operDay="2026-02-18+05:00" shop="5" cash="2" shift="277" number="10" saletime="2026-02-18T00:41:23.746+05:00" begintime="2026-02-18T00:40:42.507+05:00" amount="42930.00" discountAmount="0.00" denyPrintToDocuments="false" clientType="PRIVATE" client_guid="497660" fiscalDocNum="55640;10" factorynum="LG420230642222" inn="309529876" status="REGISTERED" cashType="TOUCH_2" fiscalnum="102064">
+        <plugin-property key="PROMO_PRINT_DISABLED" value="true"/>
+        <plugin-property key="FISCAL_DOC_ID" value="55640"/>
+        <plugin-property key="FN_DOC_NUM_IN_SHIFT" value="10"/>
+        <plugin-property key="CASHIER_NAME" value="Эргашева Дилором"/>
+        <plugin-property key="fiscalsign" value="576171506553"/>
+        <plugin-property key="UID_PURCHASE" value="b89d1398-99fd-4ee5-b05a-2aec4174a327"/>
+        <plugin-property key="CASH_TIME_ZONE" value="+05:00"/>
+        <plugin-property key="fiscalbarcode" value="https://ofd.soliq.uz/check?t=LG420230642222&amp;r=55640&amp;c=20260218004121&amp;s=576171506553"/>
+        <plugin-property key="fiscaldatetime" value="2026-02-18T00:41:21"/>
+        <positions>
+            <position order="5" departNumber="1" goodsCode="26588" barCode="4780047861159" count="1.000" cost="3490.00" nds="12.0" ndsSum="373.90" discountValue="0.00" costWithDiscount="3490.00" amount="3490.00" insertType="0" dateCommit="2026-02-18T00:40:57.249+05:00">
+                <plugin-property key="uzFfdSpic" value="01904001029000000"/>
+                <plugin-property key="uzFfdPackageCode" value="1433188"/>
+                <plugin-property key="salesTax" value="0"/>
+                <plugin-property key="ffdTag2108" value="0"/>
+                <plugin-property key="minimalPrice" value="-1"/>
+            </position>
+            <position order="1" departNumber="1" goodsCode="2935" barCode="4605627007409" count="1.000" cost="10490.00" nds="12.0" ndsSum="1123.90" discountValue="0.00" costWithDiscount="10490.00" amount="10490.00" insertType="0" dateCommit="2026-02-18T00:40:42.512+05:00">
+                <plugin-property key="uzFfdSpic" value="00403002001004030"/>
+                <plugin-property key="uzFfdPackageCode" value="1405682"/>
+                <plugin-property key="salesTax" value="0"/>
+                <plugin-property key="ffdTag2108" value="0"/>
+                <plugin-property key="minimalPrice" value="-1"/>
+            </position>
+            <position order="4" departNumber="1" goodsCode="25106" barCode="4780074391087" count="2.000" cost="4990.00" nds="12.0" ndsSum="1069.30" discountValue="0.00" costWithDiscount="4990.00" amount="9980.00" insertType="0" dateCommit="2026-02-18T00:40:55.190+05:00">
+                <plugin-property key="uzFfdSpic" value="06307001002000000"/>
+                <plugin-property key="uzFfdPackageCode" value="1373884"/>
+                <plugin-property key="salesTax" value="0"/>
+                <plugin-property key="ffdTag2108" value="0"/>
+                <plugin-property key="minimalPrice" value="-1"/>
+            </position>
+            <position order="3" departNumber="1" goodsCode="6425" barCode="4780065752538" count="1.000" cost="14990.00" nds="12.0" ndsSum="1606.10" discountValue="0.00" costWithDiscount="14990.00" amount="14990.00" insertType="0" dateCommit="2026-02-18T00:40:47.847+05:00">
+                <plugin-property key="uzFfdSpic" value="01517001002000000"/>
+                <plugin-property key="uzFfdPackageCode" value="1422317"/>
+                <plugin-property key="salesTax" value="0"/>
+                <plugin-property key="ffdTag2108" value="0"/>
+                <plugin-property key="minimalPrice" value="-1"/>
+            </position>
+            <position order="6" departNumber="1" goodsCode="16297" barCode="410600" count="1.000" cost="490.00" nds="12.0" ndsSum="52.50" discountValue="0.00" costWithDiscount="490.00" amount="490.00" insertType="2" dateCommit="2026-02-18T00:41:00.455+05:00">
+                <plugin-property key="uzFfdSpic" value="03923001002000000"/>
+                <plugin-property key="uzFfdPackageCode" value="1489210"/>
+                <plugin-property key="salesTax" value="0"/>
+                <plugin-property key="ffdTag2108" value="0"/>
+                <plugin-property key="minimalPrice" value="-1"/>
+            </position>
+            <position order="2" departNumber="1" goodsCode="13735" barCode="4780032051176" count="1.000" cost="3490.00" nds="12.0" ndsSum="373.90" discountValue="0.00" costWithDiscount="3490.00" amount="3490.00" insertType="0" dateCommit="2026-02-18T00:40:44.634+05:00">
+                <plugin-property key="uzFfdSpic" value="02009001006076062"/>
+                <plugin-property key="uzFfdPackageCode" value="1395977"/>
+                <plugin-property key="salesTax" value="0"/>
+                <plugin-property key="ffdTag2108" value="0"/>
+                <plugin-property key="minimalPrice" value="-1"/>
+            </position>
+        </positions>
+        <payments>
+            <payment order="1" typeClass="CashPaymentEntity" amount="50000.00" description="Оплата наличными"/>
+            <payment order="2" typeClass="CashChangePaymentEntity" amount="7070.00" description=""/>
+        </payments>
+        <discounts/>
+        <discountCards>
+            <discountCard>2900000202832</discountCard>
+        </discountCards>
+        <card type="INTERNAL" card_type_guid="1" number="2900000202832" addedBy="SCANNER"/>
+        <bonus-discount/>
+        <bonuses>
+            <bonus bonusesType="BONUS_SR10" chargeOnBonuses="1287.90" cardNumber="2900000202832" bonusaccountsid="1" AdvertActExternalCode="SR10_119038035" AdvertActDiscountType="65" AdvertActGUID="161045715">
+                <bonusPosition positionId="1" goodCode="2935" amount="314.70" quantity="1.000"/>
+                <bonusPosition positionId="2" goodCode="13735" amount="104.70" quantity="1.000"/>
+                <bonusPosition positionId="3" goodCode="6425" amount="449.70" quantity="1.000"/>
+                <bonusPosition positionId="4" goodCode="25106" amount="299.40" quantity="2.000"/>
+                <bonusPosition positionId="5" goodCode="26588" amount="104.70" quantity="1.000"/>
+                <bonusPosition positionId="6" goodCode="16297" amount="14.70" quantity="1.000"/>
+            </bonus>
+        </bonuses>
+    </purchase>
+    <purchase tabNumber="011" userName="Жумаева Сохиба " operationType="true" cashOperation="INCOME" operDay="2026-02-17+05:00" shop="5" cash="2" shift="276" number="268" saletime="2026-02-17T23:48:43.996+05:00" begintime="2026-02-17T23:41:53.045+05:00" amount="168000.00" discountAmount="510.00" denyPrintToDocuments="false" clientType="PRIVATE" client_guid="500619" fiscalDocNum="55630;268" factorynum="LG420230642222" inn="309529876" status="REGISTERED" cashType="TOUCH_2" fiscalnum="102064">
+        <plugin-property key="PROMO_PRINT_DISABLED" value="true"/>
+        <plugin-property key="FN_DOC_NUM_IN_SHIFT" value="259"/>
+        <plugin-property key="FISCAL_DOC_ID" value="55630"/>
+        <plugin-property key="CASHIER_NAME" value="Жумаева Сохиба"/>
+        <plugin-property key="fiscalsign" value="134111573572"/>
+        <plugin-property key="UID_PURCHASE" value="6207fd47-97dc-4b4a-9d45-92f020aed472"/>
+        <plugin-property key="CASH_TIME_ZONE" value="+05:00"/>
+        <plugin-property key="fiscalbarcode" value="https://ofd.soliq.uz/check?t=LG420230642222&amp;r=55630&amp;c=20260217234841&amp;s=134111573572"/>
+        <plugin-property key="fiscaldatetime" value="2026-02-17T23:48:41"/>
+        <positions>
+            <position order="8" departNumber="1" goodsCode="9401" barCode="2700000002407" count="1.000" cost="490.00" nds="12.0" ndsSum="52.30" discountValue="2.00" costWithDiscount="488.00" amount="488.00" insertType="2" dateCommit="2026-02-17T23:42:18.368+05:00">
+                <plugin-property key="uzFfdSpic" value="03923001002000000"/>
+                <plugin-property key="catalogStatistic" value="{&#10;  &quot;@type&quot; : &quot;ru.crystals.catalog.CatalogStatistic&quot;,&#10;  &quot;fullTimeCustomerMs&quot; : 7133&#10;}"/>
+                <plugin-property key="uzFfdPackageCode" value="1489210"/>
+                <plugin-property key="salesTax" value="0"/>
+                <plugin-property key="ffdTag2108" value="0"/>
+                <plugin-property key="minimalPrice" value="-1"/>
+            </position>
+            <position order="1" departNumber="1" goodsCode="16338" barCode="815952" count="1.000" cost="17490.00" nds="12.0" ndsSum="1868.30" discountValue="53.00" costWithDiscount="17437.00" amount="17437.00" insertType="0" dateCommit="2026-02-17T23:41:53.050+05:00">
+                <plugin-property key="uzFfdSpic" value="02009001006000000"/>
+                <plugin-property key="uzFfdPackageCode" value="1433280"/>
+                <plugin-property key="salesTax" value="0"/>
+                <plugin-property key="ffdTag2108" value="0"/>
+                <plugin-property key="minimalPrice" value="-1"/>
+            </position>
+            <position order="4" departNumber="1" goodsCode="2662" barCode="4604248002404" count="1.000" cost="14490.00" nds="12.0" ndsSum="1547.80" discountValue="44.00" costWithDiscount="14446.00" amount="14446.00" insertType="0" dateCommit="2026-02-17T23:42:00.653+05:00">
+                <plugin-property key="uzFfdSpic" value="02103002004076010"/>
+                <plugin-property key="uzFfdPackageCode" value="1313350"/>
+                <plugin-property key="salesTax" value="0"/>
+                <plugin-property key="ffdTag2108" value="0"/>
+                <plugin-property key="minimalPrice" value="-1"/>
+            </position>
+            <position order="6" departNumber="1" goodsCode="482" barCode="2000271" count="0.462" cost="32990.00" nds="12.0" ndsSum="1628.00" discountValue="46.00" costWithDiscount="32889.61" amount="15195.00" insertType="0" dateCommit="2026-02-17T23:42:14.232+05:00">
+                <plugin-property key="isWeightScanned" value="true"/>
+                <plugin-property key="uzFfdSpic" value="00702001001000000"/>
+                <plugin-property key="catalogStatistic" value="{&#10;  &quot;@type&quot; : &quot;ru.crystals.catalog.CatalogStatistic&quot;,&#10;  &quot;fullTimeCustomerMs&quot; : 7133&#10;}"/>
+                <plugin-property key="uzFfdPackageCode" value="1356406"/>
+                <plugin-property key="salesTax" value="0"/>
+                <plugin-property key="ffdTag2108" value="0"/>
+                <plugin-property key="minimalPrice" value="-1"/>
+            </position>
+            <position order="2" departNumber="1" goodsCode="33035" barCode="33035" count="1.000" cost="14990.00" nds="12.0" ndsSum="1601.30" discountValue="45.00" costWithDiscount="14945.00" amount="14945.00" insertType="0" dateCommit="2026-02-17T23:41:55.231+05:00">
+                <plugin-property key="uzFfdSpic" value="00499999001000000"/>
+                <plugin-property key="uzFfdPackageCode" value="1425646"/>
+                <plugin-property key="salesTax" value="0"/>
+                <plugin-property key="ffdTag2108" value="0"/>
+                <plugin-property key="minimalPrice" value="-1"/>
+            </position>
+            <position order="9" departNumber="1" goodsCode="33221" barCode="33221" count="1.000" cost="10990.00" nds="12.0" ndsSum="1174.00" discountValue="33.00" costWithDiscount="10957.00" amount="10957.00" insertType="0" dateCommit="2026-02-17T23:42:24.641+05:00">
+                <plugin-property key="uzFfdSpic" value="01905999996000000"/>
+                <plugin-property key="catalogStatistic" value="{&#10;  &quot;@type&quot; : &quot;ru.crystals.catalog.CatalogStatistic&quot;,&#10;  &quot;fullTimeCustomerMs&quot; : 7133&#10;}"/>
+                <plugin-property key="uzFfdPackageCode" value="1528821"/>
+                <plugin-property key="salesTax" value="0"/>
+                <plugin-property key="ffdTag2108" value="0"/>
+                <plugin-property key="minimalPrice" value="-1"/>
+            </position>
+            <position order="7" departNumber="1" goodsCode="141" barCode="2000128" count="0.446" cost="27990.00" nds="12.0" ndsSum="1333.50" discountValue="38.00" costWithDiscount="27905.83" amount="12446.00" insertType="0" dateCommit="2026-02-17T23:42:16.405+05:00">
+                <plugin-property key="isWeightScanned" value="true"/>
+                <plugin-property key="uzFfdSpic" value="00707001001000000"/>
+                <plugin-property key="catalogStatistic" value="{&#10;  &quot;@type&quot; : &quot;ru.crystals.catalog.CatalogStatistic&quot;,&#10;  &quot;fullTimeCustomerMs&quot; : 7133&#10;}"/>
+                <plugin-property key="uzFfdPackageCode" value="1346113"/>
+                <plugin-property key="salesTax" value="0"/>
+                <plugin-property key="ffdTag2108" value="0"/>
+                <plugin-property key="minimalPrice" value="-1"/>
+            </position>
+            <position order="5" departNumber="1" goodsCode="12360" barCode="0231243236" count="1.000" cost="31990.00" nds="12.0" ndsSum="3417.20" discountValue="96.00" costWithDiscount="31894.00" amount="31894.00" insertType="3" dateCommit="2026-02-17T23:42:11.278+05:00">
+                <plugin-property key="uzFfdSpic" value="00810999018000000"/>
+                <plugin-property key="catalogStatistic" value="{&#10;  &quot;@type&quot; : &quot;ru.crystals.catalog.CatalogStatistic&quot;,&#10;  &quot;fullTimeCustomerMs&quot; : 7133&#10;}"/>
+                <plugin-property key="uzFfdPackageCode" value="1394291"/>
+                <plugin-property key="salesTax" value="0"/>
+                <plugin-property key="ffdTag2108" value="0"/>
+                <plugin-property key="minimalPrice" value="-1"/>
+            </position>
+            <position order="3" departNumber="1" goodsCode="12407" barCode="2001513" count="0.530" cost="94990.00" nds="12.0" ndsSum="5377.70" discountValue="153.00" costWithDiscount="94701.89" amount="50192.00" insertType="0" dateCommit="2026-02-17T23:41:57.758+05:00">
+                <plugin-property key="isWeightScanned" value="true"/>
+                <plugin-property key="uzFfdSpic" value="00806001003000000"/>
+                <plugin-property key="uzFfdPackageCode" value="1394490"/>
+                <plugin-property key="salesTax" value="0"/>
+                <plugin-property key="ffdTag2108" value="0"/>
+                <plugin-property key="minimalPrice" value="-1"/>
+            </position>
+        </positions>
+        <payments>
+            <payment order="2" typeClass="CashChangePaymentEntity" amount="2000.00" description=""/>
+            <payment order="1" typeClass="CashPaymentEntity" amount="170000.00" description="Оплата наличными"/>
+        </payments>
+        <discounts>
+            <discount positionId="1" goodCode="16338" amount="53.00" isDiscountPurchase="true" AdvertActGUID="161046968" AdvertActExternalCode="SR10_166960" advertType="DEFAULT" AdvertActDiscountType="30" card-number="998500781919" quantity="1.000"/>
+            <discount positionId="2" goodCode="33035" amount="45.00" isDiscountPurchase="true" AdvertActGUID="161046968" AdvertActExternalCode="SR10_166960" advertType="DEFAULT" AdvertActDiscountType="30" card-number="998500781919" quantity="1.000"/>
+            <discount positionId="3" goodCode="12407" amount="153.00" isDiscountPurchase="true" AdvertActGUID="161046968" AdvertActExternalCode="SR10_166960" advertType="DEFAULT" AdvertActDiscountType="30" card-number="998500781919" quantity="0.530"/>
+            <discount positionId="4" goodCode="2662" amount="44.00" isDiscountPurchase="true" AdvertActGUID="161046968" AdvertActExternalCode="SR10_166960" advertType="DEFAULT" AdvertActDiscountType="30" card-number="998500781919" quantity="1.000"/>
+            <discount positionId="5" goodCode="12360" amount="96.00" isDiscountPurchase="true" AdvertActGUID="161046968" AdvertActExternalCode="SR10_166960" advertType="DEFAULT" AdvertActDiscountType="30" card-number="998500781919" quantity="1.000"/>
+            <discount positionId="6" goodCode="482" amount="46.00" isDiscountPurchase="true" AdvertActGUID="161046968" AdvertActExternalCode="SR10_166960" advertType="DEFAULT" AdvertActDiscountType="30" card-number="998500781919" quantity="0.462"/>
+            <discount positionId="7" goodCode="141" amount="38.00" isDiscountPurchase="true" AdvertActGUID="161046968" AdvertActExternalCode="SR10_166960" advertType="DEFAULT" AdvertActDiscountType="30" card-number="998500781919" quantity="0.446"/>
+            <discount positionId="8" goodCode="9401" amount="2.00" isDiscountPurchase="true" AdvertActGUID="161046968" AdvertActExternalCode="SR10_166960" advertType="DEFAULT" AdvertActDiscountType="30" card-number="998500781919" quantity="1.000"/>
+            <discount positionId="9" goodCode="33221" amount="33.00" isDiscountPurchase="true" AdvertActGUID="161046968" AdvertActExternalCode="SR10_166960" advertType="DEFAULT" AdvertActDiscountType="30" card-number="998500781919" quantity="1.000"/>
+        </discounts>
+        <discountCards>
+            <discountCard>998500781919</discountCard>
+        </discountCards>
+        <card type="INTERNAL" card_type_guid="1" number="998500781919" addedBy="SCANNER"/>
+        <bonus-discount/>
+        <bonuses>
+            <bonus bonusesType="BONUS_SR10" writeOffBonuses="510.00" cardNumber="998500781919" bonusaccountsid="1" AdvertActExternalCode="SR10_166960" AdvertActDiscountType="30" AdvertActGUID="161046968">
+                <bonusPosition positionId="1" goodCode="16338" amount="53.00" quantity="1.000"/>
+                <bonusPosition positionId="2" goodCode="33035" amount="45.00" quantity="1.000"/>
+                <bonusPosition positionId="3" goodCode="12407" amount="153.00" quantity="0.530"/>
+                <bonusPosition positionId="4" goodCode="2662" amount="44.00" quantity="1.000"/>
+                <bonusPosition positionId="5" goodCode="12360" amount="96.00" quantity="1.000"/>
+                <bonusPosition positionId="6" goodCode="482" amount="46.00" quantity="0.462"/>
+                <bonusPosition positionId="7" goodCode="141" amount="38.00" quantity="0.446"/>
+                <bonusPosition positionId="8" goodCode="9401" amount="2.00" quantity="1.000"/>
+                <bonusPosition positionId="9" goodCode="33221" amount="33.00" quantity="1.000"/>
+            </bonus>
+            <bonus bonusesType="BONUS_SR10" chargeOnBonuses="1680.00" cardNumber="998500781919" bonusaccountsid="1" AdvertActExternalCode="SR10_138598711" AdvertActDiscountType="-1" AdvertActGUID="161043957">
+                <bonusPosition positionId="1" goodCode="16338" amount="174.37" quantity="1.000"/>
+                <bonusPosition positionId="2" goodCode="33035" amount="149.45" quantity="1.000"/>
+                <bonusPosition positionId="3" goodCode="12407" amount="501.92" quantity="0.530"/>
+                <bonusPosition positionId="4" goodCode="2662" amount="144.46" quantity="1.000"/>
+                <bonusPosition positionId="5" goodCode="12360" amount="318.94" quantity="1.000"/>
+                <bonusPosition positionId="6" goodCode="482" amount="151.95" quantity="0.462"/>
+                <bonusPosition positionId="7" goodCode="141" amount="124.46" quantity="0.446"/>
+                <bonusPosition positionId="8" goodCode="9401" amount="4.88" quantity="1.000"/>
+                <bonusPosition positionId="9" goodCode="33221" amount="109.57" quantity="1.000"/>
+            </bonus>
+        </bonuses>
+    </purchase>
+    <purchase tabNumber="017" userName="Бахтийорова Жасмина " operationType="true" cashOperation="INCOME" operDay="2026-02-18+05:00" shop="1" cash="1" shift="158" number="4" saletime="2026-02-18T00:06:04.391+05:00" begintime="2026-02-18T00:04:56.706+05:00" amount="65821.00" discountAmount="11700.00" denyPrintToDocuments="false" clientType="PRIVATE" client_guid="461461" fiscalDocNum="56999;4" factorynum="LG420230642217" inn="309529876" status="REGISTERED" cashType="TOUCH_2" fiscalnum="101559">
+        <plugin-property key="PROMO_PRINT_DISABLED" value="true"/>
+        <plugin-property key="FN_DOC_NUM_IN_SHIFT" value="5"/>
+        <plugin-property key="FISCAL_DOC_ID" value="56999"/>
+        <plugin-property key="CASHIER_NAME" value="Бахтийорова Жасмина"/>
+        <plugin-property key="fiscalsign" value="030104206254"/>
+        <plugin-property key="UID_PURCHASE" value="173f4a3e-026a-42f8-9caf-ea921d02400a"/>
+        <plugin-property key="CASH_TIME_ZONE" value="+05:00"/>
+        <plugin-property key="fiscalbarcode" value="https://ofd.soliq.uz/check?t=LG420230642217&amp;r=56999&amp;c=20260218000601&amp;s=030104206254"/>
+        <plugin-property key="fiscaldatetime" value="2026-02-18T00:06:01"/>
+        <positions>
+            <position order="4" departNumber="1" goodsCode="10762" barCode="8801038562421" count="1.000" cost="7490.00" nds="12.0" ndsSum="802.50" discountValue="0.00" costWithDiscount="7490.00" amount="7490.00" insertType="0" dateCommit="2026-02-18T00:05:25.077+05:00">
+                <plugin-property key="uzFfdSpic" value="08212001001000000"/>
+                <plugin-property key="catalogStatistic" value="{&#10;  &quot;@type&quot; : &quot;ru.crystals.catalog.CatalogStatistic&quot;,&#10;  &quot;fullTimeCustomerMs&quot; : 2056656&#10;}"/>
+                <plugin-property key="uzFfdPackageCode" value="1507883"/>
+                <plugin-property key="salesTax" value="0"/>
+                <plugin-property key="ffdTag2108" value="0"/>
+                <plugin-property key="minimalPrice" value="-1"/>
+            </position>
+            <position order="3" departNumber="1" goodsCode="22214" barCode="4780082180116" count="1.000" cost="15990.00" nds="12.0" ndsSum="1713.20" discountValue="0.00" costWithDiscount="15990.00" amount="15990.00" insertType="0" dateCommit="2026-02-18T00:05:03.099+05:00">
+                <plugin-property key="uzFfdSpic" value="01602001001000000"/>
+                <plugin-property key="catalogStatistic" value="{&#10;  &quot;@type&quot; : &quot;ru.crystals.catalog.CatalogStatistic&quot;,&#10;  &quot;fullTimeCustomerMs&quot; : 2056656&#10;}"/>
+                <plugin-property key="uzFfdPackageCode" value="1506528"/>
+                <plugin-property key="salesTax" value="0"/>
+                <plugin-property key="ffdTag2108" value="0"/>
+                <plugin-property key="minimalPrice" value="-1"/>
+            </position>
+            <position order="1" departNumber="1" goodsCode="26123" barCode="806173" count="30.000" cost="1490.00" nds="12.0" ndsSum="3535.70" discountValue="11700.00" costWithDiscount="1100.00" amount="33000.00" insertType="3" dateCommit="2026-02-18T00:04:56.715+05:00">
+                <plugin-property key="uzFfdSpic" value="00407001001000000"/>
+                <plugin-property key="catalogStatistic" value="{&#10;  &quot;@type&quot; : &quot;ru.crystals.catalog.CatalogStatistic&quot;,&#10;  &quot;fullTimeCustomerMs&quot; : 2056656&#10;}"/>
+                <plugin-property key="uzFfdPackageCode" value="1425598"/>
+                <plugin-property key="salesTax" value="0"/>
+                <plugin-property key="ffdTag2108" value="0"/>
+                <plugin-property key="minimalPrice" value="-1"/>
+            </position>
+            <position order="2" departNumber="1" goodsCode="30484" barCode="2000874" count="0.108" cost="86490.00" nds="12.0" ndsSum="1000.80" discountValue="0.00" costWithDiscount="86490.00" amount="9341.00" insertType="0" dateCommit="2026-02-18T00:05:00.725+05:00">
+                <plugin-property key="isWeightScanned" value="true"/>
+                <plugin-property key="uzFfdSpic" value="00305001002000000"/>
+                <plugin-property key="catalogStatistic" value="{&#10;  &quot;@type&quot; : &quot;ru.crystals.catalog.CatalogStatistic&quot;,&#10;  &quot;fullTimeCustomerMs&quot; : 2056656&#10;}"/>
+                <plugin-property key="uzFfdPackageCode" value="1425217"/>
+                <plugin-property key="salesTax" value="0"/>
+                <plugin-property key="ffdTag2108" value="0"/>
+                <plugin-property key="minimalPrice" value="-1"/>
+            </position>
+        </positions>
+        <payments>
+            <payment order="1" typeClass="CashPaymentEntity" amount="65821.00" description="Оплата наличными"/>
+        </payments>
+        <discounts>
+            <discount positionId="1" goodCode="26123" amount="11700.00" isDiscountPurchase="false" AdvertActGUID="161770370" AdvertActExternalCode="SR10_150338897" advertType="FIX_PRICE" AdvertActDiscountType="-1" card-number="2900000116825" quantity="30.000"/>
+        </discounts>
+        <discountCards>
+            <discountCard>2900000116825</discountCard>
+        </discountCards>
+        <card type="INTERNAL" card_type_guid="1" number="2900000116825" addedBy="SCANNER"/>
+        <bonus-discount/>
+        <bonuses>
+            <bonus bonusesType="BONUS_SR10" chargeOnBonuses="658.21" cardNumber="2900000116825" bonusaccountsid="1" AdvertActExternalCode="SR10_119038237" AdvertActDiscountType="65" AdvertActGUID="161045504">
+                <bonusPosition positionId="1" goodCode="26123" amount="330.00" quantity="30.000"/>
+                <bonusPosition positionId="2" goodCode="30484" amount="93.41" quantity="0.108"/>
+                <bonusPosition positionId="3" goodCode="22214" amount="159.90" quantity="1.000"/>
+                <bonusPosition positionId="4" goodCode="10762" amount="74.90" quantity="1.000"/>
+            </bonus>
+        </bonuses>
+    </purchase>
+    <purchase tabNumber="010" userName="Эргашева Дилором " operationType="true" cashOperation="INCOME" operDay="2026-02-18+05:00" shop="5" cash="2" shift="277" number="6" saletime="2026-02-18T00:17:09.603+05:00" begintime="2026-02-18T00:16:33.897+05:00" amount="33648.00" discountAmount="16161.00" denyPrintToDocuments="false" clientType="PRIVATE" client_guid="563009" fiscalDocNum="55636;6" factorynum="LG420230642222" inn="309529876" status="REGISTERED" cashType="TOUCH_2" fiscalnum="102064">
+        <plugin-property key="PROMO_PRINT_DISABLED" value="true"/>
+        <plugin-property key="FISCAL_DOC_ID" value="55636"/>
+        <plugin-property key="FN_DOC_NUM_IN_SHIFT" value="6"/>
+        <plugin-property key="CASHIER_NAME" value="Эргашева Дилором"/>
+        <plugin-property key="fiscalsign" value="340171015854"/>
+        <plugin-property key="UID_PURCHASE" value="e321b38a-cba3-4433-a482-a3a822d24ef0"/>
+        <plugin-property key="CASH_TIME_ZONE" value="+05:00"/>
+        <plugin-property key="fiscalbarcode" value="https://ofd.soliq.uz/check?t=LG420230642222&amp;r=55636&amp;c=20260218001707&amp;s=340171015854"/>
+        <plugin-property key="fiscaldatetime" value="2026-02-18T00:17:07"/>
+        <positions>
+            <position order="3" departNumber="1" goodsCode="16297" barCode="410600" count="1.000" cost="490.00" nds="12.0" ndsSum="52.50" discountValue="0.00" costWithDiscount="490.00" amount="490.00" insertType="2" dateCommit="2026-02-18T00:16:44.133+05:00">
+                <plugin-property key="uzFfdSpic" value="03923001002000000"/>
+                <plugin-property key="catalogStatistic" value="{&#10;  &quot;@type&quot; : &quot;ru.crystals.catalog.CatalogStatistic&quot;,&#10;  &quot;fullTimeCustomerMs&quot; : 3382&#10;}"/>
+                <plugin-property key="uzFfdPackageCode" value="1489210"/>
+                <plugin-property key="salesTax" value="0"/>
+                <plugin-property key="ffdTag2108" value="0"/>
+                <plugin-property key="minimalPrice" value="-1"/>
+            </position>
+            <position order="1" departNumber="1" goodsCode="26123" barCode="806173" count="10.000" cost="1490.00" nds="12.0" ndsSum="1178.60" discountValue="3900.00" costWithDiscount="1100.00" amount="11000.00" insertType="3" dateCommit="2026-02-18T00:16:33.907+05:00">
+                <plugin-property key="uzFfdSpic" value="00407001001000000"/>
+                <plugin-property key="catalogStatistic" value="{&#10;  &quot;@type&quot; : &quot;ru.crystals.catalog.CatalogStatistic&quot;,&#10;  &quot;fullTimeCustomerMs&quot; : 3382&#10;}"/>
+                <plugin-property key="uzFfdPackageCode" value="1425598"/>
+                <plugin-property key="salesTax" value="0"/>
+                <plugin-property key="ffdTag2108" value="0"/>
+                <plugin-property key="minimalPrice" value="-1"/>
+            </position>
+            <position order="2" departNumber="1" goodsCode="25055" barCode="2001612" count="4.924" cost="6990.00" nds="12.0" ndsSum="2374.10" discountValue="12261.00" costWithDiscount="4500.00" amount="22158.00" insertType="0" dateCommit="2026-02-18T00:16:40.768+05:00">
+                <plugin-property key="isWeightScanned" value="true"/>
+                <plugin-property key="uzFfdSpic" value="00701001001000000"/>
+                <plugin-property key="catalogStatistic" value="{&#10;  &quot;@type&quot; : &quot;ru.crystals.catalog.CatalogStatistic&quot;,&#10;  &quot;fullTimeCustomerMs&quot; : 3382&#10;}"/>
+                <plugin-property key="uzFfdPackageCode" value="1356390"/>
+                <plugin-property key="salesTax" value="0"/>
+                <plugin-property key="ffdTag2108" value="0"/>
+                <plugin-property key="minimalPrice" value="-1"/>
+            </position>
+        </positions>
+        <payments>
+            <payment order="2" typeClass="CashChangePaymentEntity" amount="1352.00" description=""/>
+            <payment order="1" typeClass="CashPaymentEntity" amount="35000.00" description="Оплата наличными"/>
+        </payments>
+        <discounts>
+            <discount positionId="1" goodCode="26123" amount="3900.00" isDiscountPurchase="false" AdvertActGUID="161770370" AdvertActExternalCode="SR10_150338897" advertType="FIX_PRICE" AdvertActDiscountType="-1" card-number="20035943" quantity="10.000"/>
+            <discount positionId="2" goodCode="25055" amount="12261.00" isDiscountPurchase="false" AdvertActGUID="161770370" AdvertActExternalCode="SR10_150338897" advertType="FIX_PRICE" AdvertActDiscountType="-1" card-number="20035943" quantity="4.924"/>
+        </discounts>
+        <discountCards>
+            <discountCard>20035943</discountCard>
+        </discountCards>
+        <card type="INTERNAL" card_type_guid="1" number="20035943" addedBy="SCANNER"/>
+        <bonus-discount/>
+        <bonuses>
+            <bonus bonusesType="BONUS_SR10" chargeOnBonuses="336.48" cardNumber="20035943" bonusaccountsid="1" AdvertActExternalCode="SR10_138598711" AdvertActDiscountType="-1" AdvertActGUID="161043957">
+                <bonusPosition positionId="1" goodCode="26123" amount="110.00" quantity="10.000"/>
+                <bonusPosition positionId="2" goodCode="25055" amount="221.58" quantity="4.924"/>
+                <bonusPosition positionId="3" goodCode="16297" amount="4.90" quantity="1.000"/>
+            </bonus>
+        </bonuses>
+    </purchase>
+    <purchase tabNumber="017" userName="Бахтийорова Жасмина " operationType="true" cashOperation="INCOME" operDay="2026-02-18+05:00" shop="1" cash="1" shift="158" number="5" saletime="2026-02-18T00:07:08.527+05:00" begintime="2026-02-18T00:06:04.965+05:00" amount="76990.00" discountAmount="0.00" denyPrintToDocuments="false" clientType="PRIVATE" client_guid="560417" fiscalDocNum="57000;5" factorynum="LG420230642217" inn="309529876" status="REGISTERED" cashType="TOUCH_2" fiscalnum="101559">
+        <plugin-property key="PROMO_PRINT_DISABLED" value="true"/>
+        <plugin-property key="FN_DOC_NUM_IN_SHIFT" value="6"/>
+        <plugin-property key="FISCAL_DOC_ID" value="57000"/>
+        <plugin-property key="CASHIER_NAME" value="Бахтийорова Жасмина"/>
+        <plugin-property key="fiscalsign" value="212142320062"/>
+        <plugin-property key="UID_PURCHASE" value="9a0c1b44-5b71-4108-a411-0c2fca72a1ad"/>
+        <plugin-property key="CASH_TIME_ZONE" value="+05:00"/>
+        <plugin-property key="fiscalbarcode" value="https://ofd.soliq.uz/check?t=LG420230642217&amp;r=57000&amp;c=20260218000705&amp;s=212142320062"/>
+        <plugin-property key="fiscaldatetime" value="2026-02-18T00:07:05"/>
+        <positions>
+            <position order="1" departNumber="1" goodsCode="29170" barCode="4810263040813" count="1.000" cost="76990.00" nds="12.0" ndsSum="8248.90" discountValue="0.00" costWithDiscount="76990.00" amount="76990.00" insertType="0" dateCommit="2026-02-18T00:06:04.972+05:00">
+                <plugin-property key="uzFfdSpic" value="01901001013000000"/>
+                <plugin-property key="uzFfdPackageCode" value="104567"/>
+                <plugin-property key="salesTax" value="0"/>
+                <plugin-property key="ffdTag2108" value="0"/>
+                <plugin-property key="minimalPrice" value="-1"/>
+            </position>
+        </positions>
+        <payments>
+            <payment order="1" typeClass="BankCardPaymentEntity" amount="76990.00" description="Оплата банковской картой">
+                <plugin-property key="card.hash"/>
+                <plugin-property key="terminal.number"/>
+                <plugin-property key="cash.transaction.id" value="890025"/>
+                <plugin-property key="cash.transaction.date" value="2026-02-18 00:07:04.755"/>
+                <plugin-property key="code" value="bank"/>
+                <plugin-property key="bank.id" value="UZCARD"/>
+                <plugin-property key="ref.number"/>
+                <plugin-property key="subclass" value="UZCARD"/>
+                <plugin-property key="auth.code"/>
+                <plugin-property key="card.type" value="2"/>
+                <plugin-property key="bank.type" value="UNKNOWN"/>
+                <plugin-property key="card.number"/>
+            </payment>
+        </payments>
+        <discounts/>
+        <discountCards>
+            <discountCard>20033360</discountCard>
+        </discountCards>
+        <card type="INTERNAL" card_type_guid="1" number="20033360" addedBy="SCANNER"/>
+        <bonus-discount/>
+        <bonuses>
+            <bonus bonusesType="BONUS_SR10" chargeOnBonuses="769.90" cardNumber="20033360" bonusaccountsid="1" AdvertActExternalCode="SR10_138598711" AdvertActDiscountType="-1" AdvertActGUID="161043957">
+                <bonusPosition positionId="1" goodCode="29170" amount="769.90" quantity="1.000"/>
+            </bonus>
+        </bonuses>
+    </purchase>
+    <purchase tabNumber="017" userName="Бахтийорова Жасмина " operationType="true" cashOperation="INCOME" operDay="2026-02-18+05:00" shop="1" cash="1" shift="158" number="9" saletime="2026-02-18T00:22:23.752+05:00" begintime="2026-02-18T00:22:08.067+05:00" amount="6980.00" discountAmount="0.00" denyPrintToDocuments="false" clientType="PRIVATE" client_guid="461346" fiscalDocNum="57004;9" factorynum="LG420230642217" inn="309529876" status="REGISTERED" cashType="TOUCH_2" fiscalnum="101559">
+        <plugin-property key="PROMO_PRINT_DISABLED" value="true"/>
+        <plugin-property key="FN_DOC_NUM_IN_SHIFT" value="10"/>
+        <plugin-property key="FISCAL_DOC_ID" value="57004"/>
+        <plugin-property key="CASHIER_NAME" value="Бахтийорова Жасмина"/>
+        <plugin-property key="fiscalsign" value="401032164409"/>
+        <plugin-property key="UID_PURCHASE" value="969ce60e-20c3-47b0-b16d-bf0176a4f684"/>
+        <plugin-property key="CASH_TIME_ZONE" value="+05:00"/>
+        <plugin-property key="fiscalbarcode" value="https://ofd.soliq.uz/check?t=LG420230642217&amp;r=57004&amp;c=20260218002221&amp;s=401032164409"/>
+        <plugin-property key="fiscaldatetime" value="2026-02-18T00:22:21"/>
+        <positions>
+            <position order="1" departNumber="1" goodsCode="5243" barCode="4780030112398" count="2.000" cost="3490.00" nds="12.0" ndsSum="747.90" discountValue="0.00" costWithDiscount="3490.00" amount="6980.00" insertType="0" dateCommit="2026-02-18T00:22:09.510+05:00">
+                <plugin-property key="uzFfdSpic" value="02009001006031037"/>
+                <plugin-property key="uzFfdPackageCode" value="1395832"/>
+                <plugin-property key="salesTax" value="0"/>
+                <plugin-property key="ffdTag2108" value="0"/>
+                <plugin-property key="minimalPrice" value="-1"/>
+            </position>
+        </positions>
+        <payments>
+            <payment order="2" typeClass="CashChangePaymentEntity" amount="3020.00" description=""/>
+            <payment order="1" typeClass="CashPaymentEntity" amount="10000.00" description="Оплата наличными"/>
+        </payments>
+        <discounts/>
+        <discountCards>
+            <discountCard>2900000123663</discountCard>
+        </discountCards>
+        <card type="INTERNAL" card_type_guid="1" number="2900000123663" addedBy="SCANNER"/>
+        <bonus-discount/>
+        <bonuses>
+            <bonus bonusesType="BONUS_SR10" chargeOnBonuses="69.80" cardNumber="2900000123663" bonusaccountsid="1" AdvertActExternalCode="SR10_138598711" AdvertActDiscountType="-1" AdvertActGUID="161043957">
+                <bonusPosition positionId="1" goodCode="5243" amount="69.80" quantity="2.000"/>
+            </bonus>
+        </bonuses>
+    </purchase>
+</purchases>

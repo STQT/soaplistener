@@ -50,49 +50,44 @@ def extract_purchases_from_soap(body: bytes) -> tuple[str | None, str | None]:
         return None, None
 
 
-def soap_response(success: bool, message: str = "") -> str:
-    """Build SOAP response for processPurchases."""
-    status = "success" if success else "error"
-    return f"""<?xml version="1.0" encoding="UTF-8"?>
+SOAP_OK = """<?xml version="1.0" encoding="UTF-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   <soap:Body>
     <ns2:processPurchasesResponse xmlns:ns2="http://purchases.erpi.crystals.ru">
-      <return>
-        <status>{status}</status>
-        <message>{message}</message>
-      </return>
+      <return>true</return>
     </ns2:processPurchasesResponse>
   </soap:Body>
 </soap:Envelope>"""
+
+SOAP_HEADERS = {"Content-Type": "text/xml; charset=utf-8"}
 
 
 @app.route("/soap", methods=["POST"])
 def soap_endpoint():
     """SOAP endpoint for Crystals SetLoyalty processPurchases."""
-    if "text/xml" not in request.content_type and "application/xml" not in request.content_type:
-        return "Content-Type must be text/xml or application/xml", 400
-
     body = request.get_data()
     purchases_b64, version = extract_purchases_from_soap(body)
 
     if not purchases_b64:
-        logger.warning("No purchases data in request")
-        return soap_response(False, "No purchases data"), 200, {"Content-Type": "text/xml; charset=utf-8"}
+        logger.warning("No purchases data in request, returning OK anyway")
+        return SOAP_OK, 200, SOAP_HEADERS
 
     try:
         decoded = base64.b64decode(purchases_b64)
         xml_str = decoded.decode("utf-8")
     except Exception as e:
         logger.exception("Base64 decode failed: %s", e)
-        return soap_response(False, str(e)), 200, {"Content-Type": "text/xml; charset=utf-8"}
+        # Всё равно возвращаем 200, чтобы Crystals не повторял запрос
+        return SOAP_OK, 200, SOAP_HEADERS
 
     try:
         result = purchase_processor.process(xml_str, version=version)
-        logger.info("Processed %d purchases", result.get("count", 0))
-        return soap_response(True, f"Processed {result.get('count', 0)} purchases"), 200, {"Content-Type": "text/xml; charset=utf-8"}
+        logger.info("Saved %d purchases (id=%s)", result.get("count", 0), result.get("id"))
     except Exception as e:
-        logger.exception("Processing failed: %s", e)
-        return soap_response(False, str(e)), 200, {"Content-Type": "text/xml; charset=utf-8"}
+        logger.exception("DB save failed: %s", e)
+        # Возвращаем 200 — данные получены, проблема на нашей стороне
+
+    return SOAP_OK, 200, SOAP_HEADERS
 
 
 @app.route("/health")
