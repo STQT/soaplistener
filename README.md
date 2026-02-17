@@ -18,7 +18,13 @@ pip install -r requirements.txt
 
 # PostgreSQL должен быть запущен, переменная DATABASE_URL
 export DATABASE_URL="postgresql://user:pass@localhost:5432/soaplistener"
-python app.py
+python application.py
+```
+
+Для production (gunicorn + systemd) указывайте модуль `wsgi:app`:
+
+```bash
+gunicorn --workers 2 --bind 127.0.0.1:5000 "wsgi:app"
 ```
 
 - SOAP: `http://localhost:5000/soap`
@@ -39,7 +45,8 @@ docker-compose up -d
 
 ```
 soaplistener/
-├── app.py           # Flask + SOAP endpoint + Admin
+├── application.py   # Flask + SOAP endpoint + Admin
+├── wsgi.py          # Точка входа для gunicorn (wsgi:app)
 ├── app/
 │   ├── config.py
 │   ├── extensions.py
