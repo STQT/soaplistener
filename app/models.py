@@ -11,6 +11,7 @@ class PurchasesData(db.Model):
     xml_content = db.Column(db.Text, nullable=False)  # декодированный XML из <purchases>
     version = db.Column(db.String(50))  # версия из SOAP
     purchases_count = db.Column(db.Integer)  # count из атрибута purchases, для удобства
+    content_hash = db.Column(db.String(64), unique=True, index=True)  # SHA256 хеш для дедупликации
     created_at = db.Column(db.DateTime, default=datetime.utcnow)
 
     def __repr__(self):

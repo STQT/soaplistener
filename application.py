@@ -3,9 +3,10 @@ SOAP Listener for Crystals SetLoyalty processPurchases.
 Receives base64-encoded XML, decodes and stores in database.
 """
 import base64
+import hashlib
 import re
 import logging
-from flask import Flask, request
+from flask import Flask, request, Response
 from flask_admin import Admin
 from flask_admin.contrib.sqla import ModelView
 from app.extensions import db
@@ -86,6 +87,8 @@ def build_soap_response(method_name: str | None = None) -> str:
     else:
         response_method = "processPurchasesResponse"
     
+    # Формат ответа согласно официальной документации
+    # Возвращаемый параметр: boolean, True при успешной обработке
     return f"""<?xml version="1.0" encoding="UTF-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   <soap:Body>
@@ -96,7 +99,6 @@ def build_soap_response(method_name: str | None = None) -> str:
 </soap:Envelope>"""
 
 
-SOAP_HEADERS = {"Content-Type": "text/xml; charset=utf-8"}
 
 
 @app.route("/soap", methods=["POST"])
@@ -110,12 +112,15 @@ def soap_endpoint():
     body = request.get_data()
     purchases_b64, version, method_name = extract_purchases_from_soap(body)
 
+    # Логируем входящий запрос для отладки
+    logger.info(f"Received SOAP request, method: {method_name or 'unknown'}, has purchases: {bool(purchases_b64)}")
+
     # Строим ответ на основе вызываемого метода
     soap_response = build_soap_response(method_name)
 
     if not purchases_b64:
         logger.warning("No purchases data in request, returning OK anyway")
-        return soap_response, 200, SOAP_HEADERS
+        return Response(soap_response, status=200, mimetype="text/xml; charset=utf-8")
 
     try:
         decoded = base64.b64decode(purchases_b64)
@@ -123,18 +128,32 @@ def soap_endpoint():
     except Exception as e:
         logger.exception("Base64 decode failed: %s", e)
         # Всё равно возвращаем 200 с boolean True, чтобы Crystals не повторял запрос
-        return soap_response, 200, SOAP_HEADERS
+        return Response(soap_response, status=200, mimetype="text/xml; charset=utf-8")
+
+    # Вычисляем хеш содержимого для дедупликации
+    content_hash = hashlib.sha256(xml_str.encode("utf-8")).hexdigest()
+    
+    # Проверяем, не был ли уже обработан этот пакет
+    existing = db.session.query(PurchasesData).filter_by(content_hash=content_hash).first()
+    if existing:
+        logger.warning(
+            f"Duplicate request detected! Content hash: {content_hash[:16]}..., "
+            f"already processed at {existing.created_at} (ID: {existing.id})"
+        )
+        # Возвращаем успешный ответ, но не обрабатываем повторно
+        logger.info("Returning boolean True for duplicate request (already processed)")
+        return Response(soap_response, status=200, mimetype="text/xml; charset=utf-8")
 
     try:
-        purchase_processor.process(xml_str, version=version)
-        logger.info("Successfully processed purchases, returning boolean True")
+        purchase_processor.process(xml_str, version=version, content_hash=content_hash)
+        logger.info(f"Successfully processed purchases (hash: {content_hash[:16]}...), returning boolean True")
     except Exception as e:
         logger.exception("DB save failed: %s", e)
         # Согласно документации, возвращаем True даже при ошибках БД,
         # чтобы избежать повторной отправки пакета
 
     logger.info("Response: <return>true</return> (boolean True for successful processing)")
-    return soap_response, 200, SOAP_HEADERS
+    return Response(soap_response, status=200, mimetype="text/xml; charset=utf-8")
 
 
 @app.route("/health")

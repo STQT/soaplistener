@@ -7,7 +7,7 @@ from app.models import PurchasesData
 class PurchaseProcessor:
     """Сохраняет декодированный XML в БД."""
 
-    def process(self, xml_str: str, version: str | None = None) -> dict:
+    def process(self, xml_str: str, version: str | None = None, content_hash: str | None = None) -> dict:
         """Сохранить XML и опционально извлечь count для индекса."""
         purchases_count = None
         try:
@@ -22,6 +22,7 @@ class PurchaseProcessor:
             xml_content=xml_str,
             version=version,
             purchases_count=purchases_count,
+            content_hash=content_hash,
         )
         db.session.add(record)
         db.session.commit()
