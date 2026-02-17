@@ -18,6 +18,10 @@ pip install -r requirements.txt
 
 # PostgreSQL должен быть запущен, переменная DATABASE_URL
 export DATABASE_URL="postgresql://user:pass@localhost:5432/soaplistener"
+
+# Создание таблиц (выполнить один раз)
+python init_db.py
+
 python application.py
 ```
 
