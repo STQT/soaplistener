@@ -50,14 +50,16 @@ def extract_purchases_from_soap(body: bytes) -> tuple[str | None, str | None]:
         return None, None
 
 
-SOAP_OK = """<?xml version="1.0" encoding="UTF-8"?>
-<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
-  <soap:Body>
-    <ns2:processPurchasesResponse xmlns:ns2="http://purchases.erpi.crystals.ru">
-      <return>true</return>
-    </ns2:processPurchasesResponse>
-  </soap:Body>
-</soap:Envelope>"""
+SOAP_OK = """
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope
+    xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+  <soapenv:Body>
+    <ImportChecksResponse>
+      <Result>OK</Result>
+    </ImportChecksResponse>
+  </soapenv:Body>
+</soapenv:Envelope>"""
 
 SOAP_HEADERS = {"Content-Type": "text/xml; charset=utf-8"}
 
@@ -81,12 +83,11 @@ def soap_endpoint():
         return SOAP_OK, 200, SOAP_HEADERS
 
     try:
-        result = purchase_processor.process(xml_str, version=version)
-        logger.info("Saved %d purchases (id=%s)", result.get("count", 0), result.get("id"))
+        purchase_processor.process(xml_str, version=version)
     except Exception as e:
         logger.exception("DB save failed: %s", e)
-        # Возвращаем 200 — данные получены, проблема на нашей стороне
 
+    logger.info("Response: %s", SOAP_OK)
     return SOAP_OK, 200, SOAP_HEADERS
 
 
